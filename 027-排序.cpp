@@ -1,19 +1,19 @@
-/*#include <iostream>
+#include <iostream>
 #include <iomanip>
 using namespace std;
 int main(int argc, char** argv)
 {	
 	int a;
 	int array[1000] = {0};
-	cout << "��ƶq�G";
+	cout << "資料量：";
 	cin >> a;
 	for (int i = 0; i < a; i++)
 	{
-		cout << "��" << i << "�Ӹ�ơG";
+		cout << "第" << i << "個資料：";
 		cin >> array[i];
 	}
-	//�L�X�Ƨǫe
-	cout << "�Ƨǫe�G";
+	//印出排序前
+	cout << "排序前：";
 	for (int i = 0; i < a; i++)
 		cout << array[i]<<" ";
 	int buffer;
@@ -26,10 +26,10 @@ int main(int argc, char** argv)
 				array[j] = array[i];
 				array[i] = buffer;
 			}
-	//�L�X�Ƨǫ�
-	cout << endl << "�Ƨǫ�G";
+	//印出排序後
+	cout << endl << "排序後：";
 	for (int i = 0; i < a; i++)
 		cout << setw(4) << array[i];
 	system("PAUSE");
 	return 0;
-}*/
+}
