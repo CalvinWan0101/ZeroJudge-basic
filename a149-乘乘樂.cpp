@@ -8,30 +8,30 @@ int main(int argc, char** argv)
 	int A[500];
 	int number;
 	int sum;
-	cout << "´ú¸Õ¸ê®Æ¶q¡G";
+	cout << "æ¸¬è©¦è³‡æ–™é‡ï¼š";
 	cin >> number;
 	for (int i = 0; i < number; i++)
 	{
-		//²MªÅ¾ã¦CA¨Ï¨ä©Ò¦³¶µ=1
+		//æ¸…ç©ºæ•´åˆ—Aä½¿å…¶æ‰€æœ‰é …=1
 		for (int i = 0; i < number; i++)
 			A[i] = 1;
-		//²MªÅsum
+		//æ¸…ç©ºsum
 		sum = 1;
 		//input
-		cout << "²Ä¤@­Ó¼Æ¡G";
+		cout << "ç¬¬ä¸€å€‹æ•¸ï¼š";
 		cin >> a;
-		//Âà´«string¬°int°}¦C
+		//è½‰æ›stringç‚ºinté™£åˆ—
 		for (int i = 0; i < a.length(); i++)
 		{
 			stringstream transferA;
 			transferA << a[i];
 			transferA >> A[i];
 		}
-		//­pºâ¬Û­¼ªº­È
+		//è¨ˆç®—ç›¸ä¹˜çš„å€¼
 		for (int i = 0; i < a.length(); i++)
 			sum *= A[i];
-		//¦L¥X¨Ó
-		cout << "­È=" << sum << endl;
+		//å°å‡ºä¾†
+		cout << "å€¼=" << sum << endl;
 	}
 	system("PAUSE");
 	return 0;
