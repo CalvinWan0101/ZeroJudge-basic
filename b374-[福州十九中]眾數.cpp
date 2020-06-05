@@ -3,21 +3,21 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "¼Æ¾Ú¶q¡G";
+	cout << "æ•¸æ“šé‡ï¼š";
 	cin >> n;
 	int array[10000];
 	for (int i = 0; i < n; i++)
 		cin >> array[i];
 	int bucket[30001] = {0};
-	//±N¼Æ¦r¦s¤J¬Û¹ïÀ³ªº±í¤l
+	//å°‡æ•¸å­—å­˜å…¥ç›¸å°æ‡‰çš„æ¡¶å­
 	for (int i = 0; i < n; i++)
 		bucket[array[i]]++;
-	//·j´M©Ò¦³±í¤l¤¤¥X²{ªº¦¸¼Æ³Ì¦hªº¥J
+	//æœå°‹æ‰€æœ‰æ¡¶å­ä¸­å‡ºç¾çš„æ¬¡æ•¸æœ€å¤šçš„ä»”
 	int large=0;
 	for (int i = 0; i < 30001; i++)
 		if (bucket[i] > large)
 			large = bucket[i];
-	//±aµÛ§ä¥X¨Óªºlarge¦A¦^¥h§ä¥X²{¡ilarge¡j¦¸ªº¼Æ¦r
+	//å¸¶è‘—æ‰¾å‡ºä¾†çš„largeå†å›å»æ‰¾å‡ºç¾ã€largeã€‘æ¬¡çš„æ•¸å­—
 	for (int i = 0; i < 30001; i++)
 		if (bucket[i] == large)
 			cout << i << " " << bucket[i] << endl;
