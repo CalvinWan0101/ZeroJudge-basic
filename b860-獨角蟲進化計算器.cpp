@@ -3,12 +3,12 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "¿}ªG¼Æ¡G";
+	cout << "ç³–æžœæ•¸ï¼š";
 	cin >> n;
 	int before;
-	cout << "¿W¨¤¥P¼Æ¡G";
+	cout << "ç¨è§’ä»™æ•¸ï¼š";
 	cin >> before;
-	//¶i¤Æ«áªº¼Æ¶q
+	//é€²åŒ–å¾Œçš„æ•¸é‡
 	int after=0;
 	int count = 0;
 	while (before + after + n >= 12)
