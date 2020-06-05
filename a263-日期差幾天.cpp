@@ -2,16 +2,16 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//¤ë¥÷¤Ñ¼Æ°ò¥»¸ê®Æ¡A2¤ë¹w³]¬°0
+	//æœˆä»½å¤©æ•¸åŸºæœ¬è³‡æ–™ï¼Œ2æœˆé è¨­ç‚º0
 	int month[12] = { 31,0,31,30,31,30,31,31,30,31,30,31 };
-	//¶|¦~³W«h¡G4¶|40¤£¶|100¶|400¤£¶|
+	//é–å¹´è¦å‰‡ï¼š4é–40ä¸é–100é–400ä¸é–
 	int start[3];
-	cout << "¶}©l¤é´Á¡G";
+	cout << "é–‹å§‹æ—¥æœŸï¼š";
 	cin >> start[0] >> start[1] >> start[2];
 	int end[3];
-	cout << "µ²§ô¤é´Á¡G";
+	cout << "çµæŸæ—¥æœŸï¼š";
 	cin >> end[0] >> end[1] >> end[2];
-	//¶}©l¤é´Á¨ì0001¦~01¤ë01¤éªº¶¡¹j¤Ñ¼Æ
+	//é–‹å§‹æ—¥æœŸåˆ°0001å¹´01æœˆ01æ—¥çš„é–“éš”å¤©æ•¸
 	int YearStart = start[0] * 365 + start[0] / 4 - start[0] / 40 + start[0] / 100 - start[0] / 400;
 	if ((start[0] % 4 == 0 || start[0] % 100 == 0) && start[0] % 40 != 0 && start[0] % 400 != 0)
 		month[1] = 29;
@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 	for (int i = 0; i < start[1] - 1; i++)
 		monthStart += month[i];
 	int sumStart = YearStart + monthStart + start[2];
-	//µ²§ô¤é´Á¨ì0001¦~01¤ë01¤éªº¶¡¹j¤Ñ¼Æ
+	//çµæŸæ—¥æœŸåˆ°0001å¹´01æœˆ01æ—¥çš„é–“éš”å¤©æ•¸
 	int YearEnd = end[0] * 365 + end[0] / 4 - end[0] / 40 + end[0] / 100 - end[0] / 400;
 	if ((end[0] % 4 == 0 || end[0] % 100 == 0) && end[0] % 40 != 0 && end[0] % 400 != 0)
 		month[1] = 29;
@@ -31,8 +31,8 @@ int main(int argc, char** argv)
 	for (int i = 0; i < end[1] - 1; i++)
 		monthEnd += month[i];
 	int sumEnd = YearEnd + monthEnd + end[2];
-	//­pºâ¶}©l¤é´Á¨ì0001¦~01¤ë01¤éªº¶¡¹j¤Ñ¼Æ»Pµ²§ô¤é´Á¨ì0001¦~01¤ë01¤éªº¶¡¹j¤Ñ¼Æªº®t§Y¬°¨â¤é´Á¶¡¹j
-	cout << "¨â¤é´Á¶¡¹j¡G" << sumEnd - sumStart << endl;
+	//è¨ˆç®—é–‹å§‹æ—¥æœŸåˆ°0001å¹´01æœˆ01æ—¥çš„é–“éš”å¤©æ•¸èˆ‡çµæŸæ—¥æœŸåˆ°0001å¹´01æœˆ01æ—¥çš„é–“éš”å¤©æ•¸çš„å·®å³ç‚ºå…©æ—¥æœŸé–“éš”
+	cout << "å…©æ—¥æœŸé–“éš”ï¼š" << sumEnd - sumStart << endl;
 	system("PAUSE");
 	return 0;
 }
