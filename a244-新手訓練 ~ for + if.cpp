@@ -4,7 +4,7 @@ int main(int argc, char** argv)
 {
 	int number;
 	int a, b, c;
-	cout << "�ƾڲռơG";
+	cout << "¼Æ¾Ú²Õ¼Æ¡G";
 	cin >> number;
 	for (int i = 0; i < number; i++)
 	{
