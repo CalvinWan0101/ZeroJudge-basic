@@ -2,10 +2,10 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//a¬°¶ê¼Æ
+	//aÂ¬Â°Â¶ÃªÂ¼Ã†
 	int a;
 	cin >> a;
-	//a * (a - 1) + 2¬°¤@¯ë¶µ
+	//a * (a - 1) + 2Â¬Â°Â¤@Â¯Ã«Â¶Âµ
 	cout << a * (a - 1) + 2 << endl;
 	system("PAUSE");
 	return 0;
