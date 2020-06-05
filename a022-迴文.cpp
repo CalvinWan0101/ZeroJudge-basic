@@ -2,23 +2,23 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//ÅÜ¼Ælimit¬°©Ò­n¿é¤J¸ê®Æªº­Ó¼Æ
+	//è®Šæ•¸limitç‚ºæ‰€è¦è¼¸å…¥è³‡æ–™çš„å€‹æ•¸
 	int limit;
 	char before[100];
 	char after[100];
-	cout << "½Ğ¿é¤J©Ò­n¿é¤Jªº¸ê®Æ­Ó¼Æ" << endl;
+	cout << "è«‹è¼¸å…¥æ‰€è¦è¼¸å…¥çš„è³‡æ–™å€‹æ•¸" << endl;
 	cin >> limit;
-	//¿é¤J°}¦C
-	cout << "½Ğ¿é¤J¸ê®Æ¨Ã¥HªÅ®æ§@¬°¶¡¹j" << endl;
+	//è¼¸å…¥é™£åˆ—
+	cout << "è«‹è¼¸å…¥è³‡æ–™ä¸¦ä»¥ç©ºæ ¼ä½œç‚ºé–“éš”" << endl;
 	for (int i = 0; i < limit; i++)
 		cin >> before[i];
 
-	//¤­¦æ¤ÏÂà¡I
+	//äº”è¡Œåè½‰ï¼
 	for (int j = 0; j <= (limit - 1); j++)
 	{
 		after[j] = before[limit - 1 - j];
 	}
-	//¤ñ¸û
+	//æ¯”è¼ƒ
 	int flag;
 	if (limit % 2 == 0)
 		for (int i = 0; i <= (limit - 1) / 2; i++)
@@ -35,9 +35,9 @@ int main(int argc, char** argv)
 			break;
 		}
 	if (flag == 0)
-		cout << "«D°j¤å" << endl;
+		cout << "éè¿´æ–‡" << endl;
 	else
-		cout << "¬O°j¤å" << endl;
+		cout << "æ˜¯è¿´æ–‡" << endl;
 	system("PAUSE");
 	return 0;
 }
