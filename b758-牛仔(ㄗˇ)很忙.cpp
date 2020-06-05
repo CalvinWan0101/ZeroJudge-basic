@@ -4,7 +4,7 @@ int main(int argc, char** argv)
 {
 	int input[2];
 	char a;
-	cout << "²{¦b®É¶¡¡G";
+	cout << "Â²{Â¦bÂ®Ã‰Â¶Â¡Â¡G";
 	cin >> input[0] >>a>> input[1];
 	input[0] += 2;
 	input[1] += 30;
