@@ -10,10 +10,10 @@ void cat(int a, int n, int orgin, int kind[4])
 		for (arr[a] = 0; arr[a] <= orgin; arr[a]++)
 		{
 			sum = 0;
-			//­pºâ·í«e·f°t©Òºc¦¨ªºÁ`ª÷ÃB
+			//è¨ˆç®—ç•¶å‰æ­é…æ‰€æ§‹æˆçš„ç¸½é‡‘é¡
 			for (int i = 0; i < n; i++)
 				sum += (arr[i] * kind[i]);
-			//·íÁ`ª÷ÃB==­ìª÷ÃB®É
+			//ç•¶ç¸½é‡‘é¡==åŸé‡‘é¡æ™‚
 			if (sum == orgin)
 			{
 				cout << "(";
@@ -34,19 +34,19 @@ void cat(int a, int n, int orgin, int kind[4])
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "»ÉªOºØÃş¡G";
+	cout << "éŠ…æ¿ç¨®é¡ï¼š";
 	cin >> n;
-	//ºØÃş·§©ÀÃş¦ü­¿²v
+	//ç¨®é¡æ¦‚å¿µé¡ä¼¼å€ç‡
 	int kind[4];
 	for (int i =0 ; i < n; i++)
 	{
-		cout << "²Ä" << i + 1 << "ºØ­±ÃB¡G";
+		cout << "ç¬¬" << i + 1 << "ç¨®é¢é¡ï¼š";
 		cin >> kind[i];
 	}
 	int orgin;
-	cout << "©Òµ¹ª÷ÃB¡G";
+	cout << "æ‰€çµ¦é‡‘é¡ï¼š";
 	cin >> orgin;
-	//¦^·¹ªk
+	//å›æº¯æ³•
 	cat(0, n, orgin, kind);
 	system("PAUSE");
 	return 0;
