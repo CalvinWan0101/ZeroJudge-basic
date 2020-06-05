@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 		score = 60 + 20 + (in - 20) * 1;
 	else
 		score = 100;
-	cout << "¤À¼Æ=" << score << endl;
+	cout << "Â¤Ã€Â¼Ã†=" << score << endl;
 	system("PAUSE");
 	return 0;
 }
