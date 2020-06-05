@@ -5,13 +5,13 @@ int main(int argc, char** argv)
 {
 	int large;
 	int min;
-	cout << "¤U­­¡G";
+	cout << "ä¸‹é™ï¼š";
 	cin >> min;
-	cout << "¤W­­¡G";
+	cout << "ä¸Šé™ï¼š";
 	cin >> large;
 	int count = 0;
 	int i, j;
-	cout << min << "~" << large << "ªº½è¼Æ¦³¡G";
+	cout << min << "~" << large << "çš„è³ªæ•¸æœ‰ï¼š";
 	for (i = min; i <= large; i++)
 		for (j = 2; j <= i - 1; j++)
 			if (i % j == 0)
@@ -22,7 +22,7 @@ int main(int argc, char** argv)
 				cout << setw(3) << i;
 			}
 	cout << endl;
-	cout << "¦@­p" << count << "­Ó" << endl;
+	cout << "å…±è¨ˆ" << count << "å€‹" << endl;
 	system("PAUSE");
 	return 0;
 }
