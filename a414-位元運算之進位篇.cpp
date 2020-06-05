@@ -3,7 +3,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int in;
-	cout << "´ú¸ê¡G";
+	cout << "Â´ÃºÂ¸ÃªÂ¡G";
 	cin >> in;
 	int array[1000];
 	int a = in / 2;
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 		array[a] = 1;
 	for (int i = 0; i < a; i++)
 		cout << array[i];
-	//­pºâ¨ì0«e1ªº¼Æ¶q
+	//Â­pÂºÃ¢Â¨Ã¬0Â«e1ÂªÂºÂ¼Ã†Â¶q
 	cout << endl;
 	int sum = 0;
 	for (int i = 0; i < a; i++)
