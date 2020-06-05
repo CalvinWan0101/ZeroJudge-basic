@@ -3,15 +3,15 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int N, M;
-	cout << "Á`¤H¼Æ¡G";
+	cout << "ç¸½äººæ•¸ï¼š";
 	cin >> N;
-	cout << "¬õ´U¼Æ¡G";
+	cout << "ç´…å¸½æ•¸ï¼š";
 	cin >> M;
-	//¥þ³¡³£¬O¬õ´U
+	//å…¨éƒ¨éƒ½æ˜¯ç´…å¸½
 	if(N==M)
-		cout << "¤Ñ¼Æ¡G" << M  << endl;
+		cout << "å¤©æ•¸ï¼š" << M  << endl;
 	else
-	cout << "¤Ñ¼Æ¡G" << M + 1 << endl;
+	cout << "å¤©æ•¸ï¼š" << M + 1 << endl;
 	system("PAUSE");
 	return 0;
 }
