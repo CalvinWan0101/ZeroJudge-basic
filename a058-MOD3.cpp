@@ -6,15 +6,15 @@ int main(int argc, char** argv)
 	int limit;
 	int count[3] = {0,0,0};
 	int orgin[100];
-	cout << "½Ğ¿é¤J¤¸¯À­Ó¼Æ" << endl;
+	cout << "è«‹è¼¸å…¥å…ƒç´ å€‹æ•¸" << endl;
 	cin >> limit;
-	cout << "½Ğ¿é¤J¦U¤¸¯À" << endl;
+	cout << "è«‹è¼¸å…¥å„å…ƒç´ " << endl;
 	for (int w = 0; w < limit; w++)
 	{
 		cin >> orgin[w];
-		cout << "²Ä" << w + 1 << "­Ó¤¸¯À¿é¤J§¹²¦" << endl;
+		cout << "ç¬¬" << w + 1 << "å€‹å…ƒç´ è¼¸å…¥å®Œç•¢" << endl;
 	}
-	cout << "©Ò¿é¤Jªº°}¦C¬°" << endl;
+	cout << "æ‰€è¼¸å…¥çš„é™£åˆ—ç‚º" << endl;
 	for (int v = 0; v < limit; v++)
 	{
 		cout << setw(2) << orgin[v];
@@ -32,9 +32,9 @@ int main(int argc, char** argv)
 		else if ((orgin[i] - 2) % 3 == 0)
 			count[2]++;
 	}
-	cout <<setw(8)<< "3n¦³" << count[0] <<"­Ó"<< endl;
-	cout <<setw(8)<< "3n+1¦³" << count[1] <<"­Ó"<< endl;
-	cout << setw(8)<<"3n+2¦³" << count[2] <<"­Ó"<< endl;
+	cout <<setw(8)<< "3næœ‰" << count[0] <<"å€‹"<< endl;
+	cout <<setw(8)<< "3n+1æœ‰" << count[1] <<"å€‹"<< endl;
+	cout << setw(8)<<"3n+2æœ‰" << count[2] <<"å€‹"<< endl;
 	system("PAUSE");
 	return 0;
 }
