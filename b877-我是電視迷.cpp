@@ -3,9 +3,9 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int a, b;
-	cout << "°_©lÂI¡G";
+	cout << "Â°_Â©lÃ‚IÂ¡G";
 	cin >> a;
-	cout << "²×ÂI¡G";
+	cout << "Â²Ã—Ã‚IÂ¡G";
 	cin >> b;
 	if (a > b)
 		cout << 100 - a + b << endl;
