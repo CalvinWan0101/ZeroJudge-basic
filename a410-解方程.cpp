@@ -4,17 +4,17 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int array[2][3];
-//¿é¤J¤èµ{¦¡¤¸¯À
-	cout << "½Ð¿é¤J¤èµ{¦¡«Y¼Æ" << endl;
+//è¼¸å…¥æ–¹ç¨‹å¼å…ƒç´ 
+	cout << "è«‹è¼¸å…¥æ–¹ç¨‹å¼ä¿‚æ•¸" << endl;
 	for (int i = 0; i < 2; i++)
 	{
 		for (int j = 0; j < 3; j++)
 		{
 			cin >> array[i][j];
-			cout << "(" << i << " , " << j << ")" << "¤w¿é¤J§¹²¦" << endl;
+			cout << "(" << i << " , " << j << ")" << "å·²è¼¸å…¥å®Œç•¢" << endl;
 		}
 	}
-	//¹wÄý©Ò¿é¤Jªº°}¦C
+	//é è¦½æ‰€è¼¸å…¥çš„é™£åˆ—
 	for (int i = 0; i < 2; i++)
 	{
 		for (int j = 0; j < 3; j++)
@@ -24,19 +24,19 @@ int main(int argc, char** argv)
 		cout << endl;
 	}
 	cout << endl;
-	//¹wÄý©Ò¿é¤Jªº¤èµ{¦¡
+	//é è¦½æ‰€è¼¸å…¥çš„æ–¹ç¨‹å¼
 	for (int i = 0; i < 2; i++)
 	{
 		cout << setw(3)<<array[i][0] <<setw(3)<< (array[i][1] > 0 ? "x+" : "x")<<setw(3)<<array[i][1] << " y="<<setw(3)<< array[i][2] << endl;
 	}
-	//¤À¥X(µL­­¦h¸Ñ)(µL¸Ñ)(°ß¤@¸Ñ)
+	//åˆ†å‡º(ç„¡é™å¤šè§£)(ç„¡è§£)(å”¯ä¸€è§£)
 	if (array[0][0] / array[1][0] == array[0][1] / array[1][1] && array[0][2] / array[1][2] == array[0][1] / array[1][1] && array[0][0] / array[1][0] == array[0][2] / array[1][2])
-		cout << "µL­­¦h¸Ñ" << endl;
+		cout << "ç„¡é™å¤šè§£" << endl;
 	else if (array[0][0] / array[1][0] == array[0][1] / array[1][1] && array[0][2] / array[1][2] != array[0][1] / array[1][1])
-		cout << "µL¸Ñ" << endl;
+		cout << "ç„¡è§£" << endl;
 	else
 	{
-		//­pºâ¹Lµ{
+		//è¨ˆç®—éŽç¨‹
 		//D
 		int D = array[0][0] * array[1][1] - array[0][1] * array[1][0];
 		//Dx
