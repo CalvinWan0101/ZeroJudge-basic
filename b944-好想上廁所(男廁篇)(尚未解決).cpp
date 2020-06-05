@@ -3,12 +3,12 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "¤p«K¤æ¼Æ¶q¡G";
+	cout << "å°ä¾¿æ–—æ•¸é‡ï¼š";
 	cin >> n;
 	int array[21][2];
 	for (int i = 0; i < 21; i++)
 	{
-		cout << "²Ä" << i + 1 << "­Ó¤H&¥Lªº®É¶¡¡G";
+		cout << "ç¬¬" << i + 1 << "å€‹äºº&ä»–çš„æ™‚é–“ï¼š";
 		cin >> array[i][0] >> array[i][1];
 	}
 
