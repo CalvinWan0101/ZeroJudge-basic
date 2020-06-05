@@ -3,9 +3,9 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	long long n, m;
-	cout << "°_©l¼Æ¦r¡G";
+	cout << "Â°_Â©lÂ¼Ã†Â¦rÂ¡G";
 	cin >> n;
-	cout << "©M¤W­­¡G";
+	cout << "Â©MÂ¤WÂ­Â­Â¡G";
 	cin >> m;
 	//endless cycle
 	int sum = 0;
