@@ -4,7 +4,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "¤W­­¡G";
+	cout << "Â¤WÂ­Â­Â¡G";
 	cin >> n;
 	for (int i = 1; i < n; i++)
 	{
