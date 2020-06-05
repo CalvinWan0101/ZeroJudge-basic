@@ -3,10 +3,10 @@
 #include <sstream>
 #include <algorithm>
 using namespace std;
-//¤ñ¸û¨â­Ó¤j¼Æªº¤j¤p
+//æ¯”è¼ƒå…©å€‹å¤§æ•¸çš„å¤§å°
 int compare(int a[500], int b[1000])
 {
-	//¿é¤Jcompare¨ç¼Æªº¨â­Ó°}¦C¦P¼Ë¨Ï¥ÎÄA­Ë«áªº°}¦C¤è«K­pºâ
+	//è¼¸å…¥compareå‡½æ•¸çš„å…©å€‹é™£åˆ—åŒæ¨£ä½¿ç”¨é¡›å€’å¾Œçš„é™£åˆ—æ–¹ä¾¿è¨ˆç®—
 	int counta = 0, countb = 0;
 	for (int i = 0; i < 500; i++)
 		if (a[i] > 0)
@@ -14,14 +14,14 @@ int compare(int a[500], int b[1000])
 	for (int i = 0; i < 500; i++)
 		if (b[i] > 0)
 			countb++;
-	//¿z¿ï²Ä¤@Ãö¤ñ¦ì¼Æ
+	//ç¯©é¸ç¬¬ä¸€é—œæ¯”ä½æ•¸
 	if (counta > countb)
 		return 1;
 	else if (counta < countb)
 		return 2;
 	else if (counta == countb)
 		return 3;
-	//¦pªG¦ì¼Æ¤@¼Ë«h¶}©l¤ñ¸û¨C¤@¦ì¼Æªº¤j¤p
+	//å¦‚æœä½æ•¸ä¸€æ¨£å‰‡é–‹å§‹æ¯”è¼ƒæ¯ä¸€ä½æ•¸çš„å¤§å°
 	else
 		for (int i = 0; i < counta; i++)
 			if (a[counta - 1 - i] > b[counta - 1 - i])
@@ -38,20 +38,20 @@ int compare(int a[500], int b[1000])
 int main(int argc, char** argv)
 {
 	
-	//¿é¤Jªº­ì©l¸ê®Æ
+	//è¼¸å…¥çš„åŸå§‹è³‡æ–™
 	string a, b;
-	//¹Bºâ²Å
+	//é‹ç®—ç¬¦
 	string c;
 	int A[500] = { 0 };
 	int B[500] = { 0 };
 	int last[1000] = { 0 };
 
-	cout << "½Ğ¿é¤J­pºâ¦¡" << endl;;
+	cout << "è«‹è¼¸å…¥è¨ˆç®—å¼" << endl;;
 	cin >> a >> c >> b;
-	//Âà´«string°}¦C¬°int°}¦C
+	//è½‰æ›stringé™£åˆ—ç‚ºinté™£åˆ—
 	int Z = max(a.length(), b.length());
 	int Y = a.length() + b.length();
-	cout << "µ²ªG¡G";
+	cout << "çµæœï¼š";
 	for (int i = 0; i < a.length(); i++)
 	{
 		stringstream transferA;
@@ -68,15 +68,15 @@ int main(int argc, char** argv)
 		cout << B[i];
 	}
 	cout << "=";
-	//ÄA­Ë°}¦CA
+	//é¡›å€’é™£åˆ—A
 	int tranA[500] = { 0 };
 	for (int i = 0; i < a.length(); i++)
 		tranA[i] = A[a.length() - 1 - i];
-	//ÄA­Ë°}¦CB
+	//é¡›å€’é™£åˆ—B
 	int tranB[500] = { 0 };
 	for (int i = 0; i < b.length(); i++)
 		tranB[i] = B[b.length() - 1 - i];
-	//¥[ªk­pºâ
+	//åŠ æ³•è¨ˆç®—
 	if (c == "+")
 	{
 		int carry = 0;
@@ -86,23 +86,23 @@ int main(int argc, char** argv)
 			carry = (tranA[i] + tranB[i] + carry) / 10;
 			last[i] = last[i] % 10;
 		}
-		//³Ì°ª¦ì¨S¦³¶i¦ì	
+		//æœ€é«˜ä½æ²’æœ‰é€²ä½	
 		if (last[Z] == 0)
 			for (int i = 0; i < Z; i++)
 				cout << last[Z - 1 - i];
-		//¦³¶i¦ì
+		//æœ‰é€²ä½
 		else
 			for (int i = 0; i <= Z; i++)
 				cout << last[Z - i];
 	}
-	//´îªk­pºâ
+	//æ¸›æ³•è¨ˆç®—
 	else if (c == "-")
 	{
 		int i = 0, borrow = 0;
 		for (; i < Z; i++)
 		{
 			last[i] = tranA[i] - tranB[i] - borrow;
-			//´î§¹¤§«áµo²{¤p©ó0 =¡n©¹«á­É1
+			//æ¸›å®Œä¹‹å¾Œç™¼ç¾å°æ–¼0 =ã€‹å¾€å¾Œå€Ÿ1
 			if (last[i] < 0)
 			{
 				borrow = 1;
@@ -111,28 +111,28 @@ int main(int argc, char** argv)
 			else
 				borrow = 0;
 		}
-		//³Ì°ª¦ì°h¦ì
+		//æœ€é«˜ä½é€€ä½
 		if (last[Z - 1] == 0)
 			for (int i = 0; i < Z - 1; i++)
 				cout << last[Z - 2 - i];
-		//³Ì°ª¦ì¤£°h¦ì
+		//æœ€é«˜ä½ä¸é€€ä½
 		else
 			for (int i = 0; i < Z; i++)
 				cout << last[Z - 1 - i];
 	}
-	//­¼ªk­pºâ
+	//ä¹˜æ³•è¨ˆç®—
 	else if (c == "*")
 	{
 		int carry = 0;
 		for (int i = 0; i <= b.length(); i++)
 		{
-			//·ía=0®É¸õ¹L±Ô­z¶i¤J°j°é¤U¤@¨B
+			//ç•¶a=0æ™‚è·³éæ•˜è¿°é€²å…¥è¿´åœˆä¸‹ä¸€æ­¥
 			if (a[i] == 0)
 				continue;
 			for (int j = 0; j < a.length(); j++)
 				last[i + j] += tranA[j] * tranB[i];
 		}
-		//¨S¦³¶i¦ì
+		//æ²’æœ‰é€²ä½
 		if (last[Y] == 0)
 			for (int i = 0; i < Y - 1; i++)
 			{
@@ -140,7 +140,7 @@ int main(int argc, char** argv)
 				carry = last[i] / 10;
 				last[i] %= 10;
 			}
-		//¦³¶i¦ì
+		//æœ‰é€²ä½
 		else
 			for (int i = 0; i < Y; i++)
 			{
@@ -148,21 +148,21 @@ int main(int argc, char** argv)
 				carry = last[i] / 10;
 				last[i] %= 10;
 			}
-		//¦L¥X
-	//¨S¦³¶i¦ì
+		//å°å‡º
+	//æ²’æœ‰é€²ä½
 		if (last[Y] == 0)
 			for (int i = 0; i < Y - 1; i++)
 				cout << last[Y - 2 - i];
-		//¦³¶i¦ì
+		//æœ‰é€²ä½
 		else
 			for (int i = 0; i < Y; ++i)
 				cout << last[Y - 1 - i];
 	}
-	//°£ªk­pºâ
+	//é™¤æ³•è¨ˆç®—
 	else if (c == "/")
 	{
 		int result[500];
-		//endless cycle¥[ªk¤@ª½¥[ª½¨ìµ²ªG¤j©ó³Q°£¼Æ
+		//endless cycleåŠ æ³•ä¸€ç›´åŠ ç›´åˆ°çµæœå¤§æ–¼è¢«é™¤æ•¸
 		int sum = 0;
 		int carry = 0;
 		int orgin = b.length();
