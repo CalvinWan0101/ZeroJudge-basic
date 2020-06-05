@@ -7,13 +7,13 @@ int main(int argc, char** argv)
 	cin >> n;
 	for (int i = 1; i <=n; i++)
 	{
-		cout << "²Ä" << i  << "¤Ñ¶RªºÄCÀY¶q¡G";
+		cout << "ç¬¬" << i  << "å¤©è²·çš„é¥…é ­é‡ï¼š";
 		cin >> array[i];
 	}
 	int sum = 0;
 	for (int i = 1; i <= n; i++)
 		sum += array[i]*i;
-	cout << "Á`»ù¡G" << sum << endl;
+	cout << "ç¸½åƒ¹ï¼š" << sum << endl;
 	system("PAUSE");
 	return 0;
 }
