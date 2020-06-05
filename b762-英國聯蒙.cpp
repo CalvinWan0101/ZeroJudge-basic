@@ -1,9 +1,9 @@
 #include <iostream>
 #include <string>
-//¥²¶·¼L¬¶¤@¤UXDD
+//å¿…é ˆå˜´ç‚®ä¸€ä¸‹XDD
 //ENGLAND
 //Expansive National Guardianship Loli Analysis Neighborly Dynasty
-//°ê»ÚÅÚ²ú«OÅ@¤ı´Â
+//åœ‹éš›è˜¿è‰ä¿è­·ç‹æœ
 using namespace std;
 int main(int argc, char** argv)
 {
