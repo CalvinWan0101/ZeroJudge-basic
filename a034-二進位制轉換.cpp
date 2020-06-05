@@ -3,7 +3,7 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//¦n¦n¹ï·Ó10¶i¦ì»P2¶i¦ì§ä³W«ß
+	//Â¦nÂ¦nÂ¹Ã¯Â·Ã“10Â¶iÂ¦Ã¬Â»P2Â¶iÂ¦Ã¬Â§Ã¤Â³WÂ«ÃŸ
 	int in;
 	cin >> in;
 	int a = in / 2;
