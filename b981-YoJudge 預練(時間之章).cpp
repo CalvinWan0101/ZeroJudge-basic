@@ -22,7 +22,7 @@ int main(int argc, char** argv)
 		m = 0;
 		point = 0;
 		s = 0;
-		//§ä¡ih¡j¡im¡j¡is¡j¡i.¡jªº¦ì¸m¡A­Y¨S¦³«h¬°0
+		//æ‰¾ã€hã€‘ã€mã€‘ã€sã€‘ã€.ã€‘çš„ä½ç½®ï¼Œè‹¥æ²’æœ‰å‰‡ç‚º0
 		for (int i = 0; i < a.length(); i++)
 		{
 			if (array[i] == 104)
@@ -34,17 +34,17 @@ int main(int argc, char** argv)
 			if (array[i] == 115)
 				s = i;
 		}
-		//¶}©l¤ÀÃş¦UºØ²ö¦W¨ä§®ªºª¬ªp
+		//é–‹å§‹åˆ†é¡å„ç¨®è«åå…¶å¦™çš„ç‹€æ³
 		//X hour
 		if (array[a.length() - 1] == 114)
 		{
-			//¤@¦ì
+			//ä¸€ä½
 			if (a.length() == 5)
 			{
 				count += array[0];
 				count *= 3600000;
 			}
-			// ¨â¦ì
+			// å…©ä½
 			else if (a.length() == 6)
 			{
 				count += (array[0] * 10 + array[1]);
@@ -54,19 +54,19 @@ int main(int argc, char** argv)
 		//X h Y m
 		else if (array[a.length() - 1] == 109)
 		{
-			//³æ³æ
+			//å–®å–®
 			if (a.length() == 4)
 				count = array[0] * 60 * 60 * 1000 + a[2] * 60 * 1000;
-			//ÂùÂù
+			//é›™é›™
 			else if (a.length() == 6)
 				count = (array[0] * 10 + array[1]) * 60 * 60 * 1000 + (array[3] * 10 + array[4]) * 60 * 1000;
-			//¥ı¥Îªø«×¬°5¥]§t³æÂù»PÂù³æ¨âºØª¬ªp
+			//å…ˆç”¨é•·åº¦ç‚º5åŒ…å«å–®é›™èˆ‡é›™å–®å…©ç¨®ç‹€æ³
 			else if (a.length() == 5)
 			{
-				//³æÂù
+				//å–®é›™
 				if (array[1] == 104)
 					count = (array[0] * 60 + array[2] * 10 + array[3]) * 60 * 1000;
-				//Âù³æ
+				//é›™å–®
 				else if (array[2] == 104)
 					count = (array[0] * 10 + array[1]) * 60 * 60 * 1000 + array[3] * 60 * 1000;
 			}
@@ -74,61 +74,61 @@ int main(int argc, char** argv)
 		//X min
 		else if (array[a.length() - 1] == 110)
 		{
-			//³æ
+			//å–®
 			if (array[1] == 109)
 				count = array[0] * 60 * 1000;
-			//Âù
+			//é›™
 			else if (array[2] == 109)
 				count = (array[0] * 10 + array[1]) * 60 * 1000;
 		}
 		//X ms
 		else if (array[a.length() - 1] == 115 && array[a.length() - 2] == 109)
 		{
-			//³æ
+			//å–®
 			if (array[1] == 109)
 				count = array[0];
-			//Âù
+			//é›™
 			else if (array[2] == 109)
 				count = array[0] * 10 + array[1];
-			//¤T
+			//ä¸‰
 			else if (array[3] == 109)
 				count = array[0] * 100 + array[1] * 10 + array[2];
 		}
 		//X s
 		else if (array[a.length() - 1] == 115 && a.length() <= 3)
 		{
-			//³æ
+			//å–®
 			if (array[1] == 115)
 				count = array[0] * 1000;
-			//Âù
+			//é›™
 			if (array[2] == 115)
 				count = (array[0] * 10 + array[1]) * 1000;
 		}
 		//A.B s
 		else if (array[a.length() - 1] == 115 && h == 0 && m == 0)
 		{
-			//³æ
+			//å–®
 			if (point == 1)
 				count = array[0] * 1000 + array[2] * 100;
-			//Âù
+			//é›™
 			else if (point == 2)
 				count = (array[0] * 10 + array[1]) * 1000 + array[3] * 100;
 		}
 		//AmBs
 		else if (array[a.length() - 1] == 115 && h == 0 && m != 0)
 		{
-			//³æ³æ
+			//å–®å–®
 			if (a.length() == 4)
 				count = array[0] * 60 * 1000 + array[2] * 1000;
-			//ÂùÂù
+			//é›™é›™
 			else if (a.length() == 6)
 				count = (array[0] * 10 + array[1]) * 60 * 1000 + (array[3] * 10 + array[4]) * 1000;
 			else if (a.length() == 5)
 			{
-				//³æÂù
+				//å–®é›™
 				if (m == 1)
 					count = array[0] * 60 * 1000 + (array[2] * 10 + array[3]) * 1000;
-				//Âù³æ
+				//é›™å–®
 				else if (m == 2)
 					count = (array[0] * 10 + array[1]) * 60 * 1000 + array[3] * 1000;
 			}
