@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 			break;
 		}
 	if (i == 2)
-		cout << "¤¬½è" << endl;
+		cout << "Â¤Â¬Â½Ã¨" << endl;
 	system("PAUSE");
 	return 0;
 }
