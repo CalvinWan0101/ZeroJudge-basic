@@ -7,9 +7,9 @@ int main(int argc, char** argv)
 {
 	string a;
 	getline(cin, a);
-	cout << "��X" << a << endl;
-	cout << "�@" << a.length() << "�줸" << endl;
-	cout << "�ק�� :" << endl;
+	cout << "­ì½X" << a << endl;
+	cout << "¦@" << a.length() << "¦ì¤¸" << endl;
+	cout << "­×§ï«á :" << endl;
 	for (int i = 0; i < a.length(); i++)
 	{ 
 		char e= a[i] + 7;
