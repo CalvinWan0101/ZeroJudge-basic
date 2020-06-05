@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 int arra[100] = { 0 };
-//n¬°³Ì¤jªº¼Æ¦rÀn
-//array¬°¦s¨ú¼h¼Æªº°}¦C¡A±q1¶}©l³é
+//nç‚ºæœ€å¤§çš„æ•¸å­—é´¨
+//arrayç‚ºå­˜å–å±¤æ•¸çš„é™£åˆ—ï¼Œå¾1é–‹å§‹å–²
 int used[100] = { 0 };
 void print4(int flo, int array[100])
 {
@@ -53,8 +53,8 @@ void print(int flo, int n, int array[100])
 }
 int main(int argc, char** argv)
 {
-	cout << "¹w³]¼h¼Æ¬°¡i4¡j³Ì°ò¥»ªº°j°é¼gªk¡G" << endl;
-	//¥ı¥H4¬°¨Ò¤l
+	cout << "é è¨­å±¤æ•¸ç‚ºã€4ã€‘æœ€åŸºæœ¬çš„è¿´åœˆå¯«æ³•ï¼š" << endl;
+	//å…ˆä»¥4ç‚ºä¾‹å­
 	for (int i = 1; i <= 4; i++)
 		for (int j = 1; j <= 4; j++)
 			for (int k = 1; k <= 4; k++)
@@ -62,16 +62,16 @@ int main(int argc, char** argv)
 					if (i != j && i != k && i != l && j != k && j != l && k != l)
 						cout << i << j << k << l << endl;
 	cout << endl;
-	//°İÃDÂI¡G
-	//¶È¯à¦b½T©w¼Æ¦r®É¨Ï¥Î
-	//µLªk¦Û­q²`«×
-	//¥l³ê«Â²rªº»¼°j¨ç¼Æ·f°t°j°é§@¦Û©w¸q¨Ï¥Î¡I¡I¡I
+	//å•é¡Œé»ï¼š
+	//åƒ…èƒ½åœ¨ç¢ºå®šæ•¸å­—æ™‚ä½¿ç”¨
+	//ç„¡æ³•è‡ªè¨‚æ·±åº¦
+	//å¬å–šå¨çŒ›çš„éè¿´å‡½æ•¸æ­é…è¿´åœˆä½œè‡ªå®šç¾©ä½¿ç”¨ï¼ï¼ï¼
 
-	//¥ı§âi,j,k,l§ó§ï¦¨¤@¼ËªºªF¦è
-	//buffer[4]°}¦C¡I¡I¡I
-	cout << "±Ni¡Aj¡Ak¡AlÂà´«¦¨°}¦Cªº¼gªk¡G" << endl;
-	//ª`·N¡G
-	//³o¸Ìªºbuffer[i]ªºi«üªº¬O¼h¼Æ
+	//å…ˆæŠŠi,j,k,læ›´æ”¹æˆä¸€æ¨£çš„æ±è¥¿
+	//buffer[4]é™£åˆ—ï¼ï¼ï¼
+	cout << "å°‡iï¼Œjï¼Œkï¼Œlè½‰æ›æˆé™£åˆ—çš„å¯«æ³•ï¼š" << endl;
+	//æ³¨æ„ï¼š
+	//é€™è£¡çš„buffer[i]çš„iæŒ‡çš„æ˜¯å±¤æ•¸
 	int buffer[5];
 	for (buffer[1] = 1; buffer[1] <= 4; buffer[1]++)
 		for (buffer[2] = 1; buffer[2] <= 4; buffer[2]++)
@@ -80,12 +80,12 @@ int main(int argc, char** argv)
 					if (buffer[1] != buffer[2] && buffer[1] != buffer[3] && buffer[1] != buffer[4] && buffer[2] != buffer[3] && buffer[2] != buffer[4] && buffer[3] != buffer[4])
 						cout << buffer[1] << buffer[2] << buffer[3] << buffer[4] << endl;
 	cout << endl;
-	//¦¹®Éªºbuffer[n]´N¥i¥H¨Ì¾a§ó§ïn­È¨Ó»¼°j
-	//³o¸Ì¨Ì¾a©I¥s¨ç¼Æªº°Õ
-	cout << "¾a»¼°j¨ç¼Æ+°}¦Cªº¼gªk¡G" << endl;
+	//æ­¤æ™‚çš„buffer[n]å°±å¯ä»¥ä¾é æ›´æ”¹nå€¼ä¾†éè¿´
+	//é€™è£¡ä¾é å‘¼å«å‡½æ•¸çš„å•¦
+	cout << "é éè¿´å‡½æ•¸+é™£åˆ—çš„å¯«æ³•ï¼š" << endl;
 	print4(1, arra);
 	cout << endl;
-	cout << "¨Ï¥ÎªÌ¿é¤J¦Û­q¼h¼Æ¹ê¾Ôºt½m¡G" << endl;
+	cout << "ä½¿ç”¨è€…è¼¸å…¥è‡ªè¨‚å±¤æ•¸å¯¦æˆ°æ¼”ç·´ï¼š" << endl;
 	int w;
 	cin >> w;
 	print(1, w, arra);
