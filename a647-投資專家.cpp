@@ -3,16 +3,16 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int num;
-	cout << "ÃÀ³N«~¼Æ¶q¡G";
+	cout << "è—è¡“å“æ•¸é‡ï¼š";
 	cin >> num;
 	double value[2];
 	for (int i = 0; i < num; i++)
 	{
-		cout << "§ë¸êª÷ÃB¡G";
+		cout << "æŠ•è³‡é‡‘é¡ï¼š";
 		cin >> value[0];
-		cout << "¥Ø«e»ù­È¡G";
+		cout << "ç›®å‰åƒ¹å€¼ï¼š";
 		cin >> value[1];
-		cout<<"Àò§Q²v¡G"<<((value[1] - value[0]) / value[0])*100<<"%"<<endl;
+		cout<<"ç²åˆ©çŽ‡ï¼š"<<((value[1] - value[0]) / value[0])*100<<"%"<<endl;
 		if (((value[1] - value[0]) / value[0]) * 100 >= 10 || ((value[1] - value[0]) / value[0]) * 100 <= -7)
 			cout << "dispose" << endl;
 		else
