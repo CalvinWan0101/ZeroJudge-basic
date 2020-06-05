@@ -4,21 +4,21 @@ int main(int argc, char** argv)
 {
 	int month, day;
 	int S;
-	cout << "½Ð¿é¤J¤ë¥÷" << endl;
+	cout << "è«‹è¼¸å…¥æœˆä»½" << endl;
 	cin >> month;
-	cout << "½Ð¿é¤J¤é´Á" << endl;
+	cout << "è«‹è¼¸å…¥æ—¥æœŸ" << endl;
 	cin >> day;
 	S = (month * 2 + day) % 3;
 	switch (S)
 	{
 	case 0:
-		cout << "´¶³q" << endl;
+		cout << "æ™®é€š" << endl;
 		break;
 	case 1:
-		cout << "¦N" << endl;
+		cout << "å‰" << endl;
 		break;
 	case 2:
-		cout << "¤j¦N" << endl;
+		cout << "å¤§å‰" << endl;
 	}
 	system("PAUSE");
 	return 0;
