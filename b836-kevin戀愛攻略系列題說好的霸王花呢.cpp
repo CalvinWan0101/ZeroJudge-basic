@@ -3,10 +3,10 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "ªáÃ¤¶q¡G";
+	cout << "ÂªÃ¡ÃƒÂ¤Â¶qÂ¡G";
 	cin >> n;
 	int m;
-	cout << "ªáÃ¤­¿²v¡G";
+	cout << "ÂªÃ¡ÃƒÂ¤Â­Â¿Â²vÂ¡G";
 	cin >> m;
 	int count=0;
 	for (int i = 0;; i++)
