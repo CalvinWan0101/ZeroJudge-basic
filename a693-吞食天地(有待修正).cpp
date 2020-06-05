@@ -2,8 +2,8 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//nºØ­¹ª«¡AnºØ¹¡­¹«×
-	//mºØ¦Yªk¡A°_ÂI~²×ÂI
+	//nç¨®é£Ÿç‰©ï¼Œnç¨®é£½é£Ÿåº¦
+	//mç¨®åƒæ³•ï¼Œèµ·é»ž~çµ‚é»ž
 	int array[1001] = { 0 };
 	int n, m;
 	cin >> n >> m;
