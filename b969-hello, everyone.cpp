@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 	getline(cin, a);
 	int start = 0;
 	int end = 0;
-	//��Ĥ@��end
+	//§ä²Ä¤@­Óend
 	while (true)
 	{
 		for (int i = start; i <= a.length(); i++)
