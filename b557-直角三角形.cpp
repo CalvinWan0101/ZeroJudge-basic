@@ -3,12 +3,12 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int n;
-	cout << "¤ì´Î¼Æ¶q¡G";
+	cout << "æœ¨æ£’æ•¸é‡ï¼š";
 	cin >> n;
 	int array[100];
 	for (int i = 0; i < n; i++)
 	{
-		cout << "²Ä" << i + 1 << "®Ú¤ì´Îªø«×¡G";
+		cout << "ç¬¬" << i + 1 << "æ ¹æœ¨æ£’é•·åº¦ï¼š";
 		cin >> array[i];
 	}
 	int count = 0;
@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 						if (array[i] > array[j] && array[j] > array[k])
 							count++;
 			}
-	cout << "¥i¥Hºc¦¨" << count << "ºØª½¨¤¤T¨¤§Î" << endl;
+	cout << "å¯ä»¥æ§‹æˆ" << count << "ç¨®ç›´è§’ä¸‰è§’å½¢" << endl;
 	system("PAUSE");
 	return 0;
 }
