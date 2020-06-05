@@ -4,7 +4,7 @@ int main(int argc, char** argv)
 {
 	int n;
 	int array[100];
-	cout << "¬ì¥Ø¶q¡G";
+	cout << "Â¬Ã¬Â¥Ã˜Â¶qÂ¡G";
 	cin >> n;
 	for (int i = 0; i < n; i++)
 		cin >> array[i];
@@ -13,7 +13,7 @@ int main(int argc, char** argv)
 	for (int i = 0; i < n; i++)
 		sum += array[i];
 
-	cout <<"¥­§¡¬°"<<sum / n << endl;
+	cout <<"Â¥Â­Â§Â¡Â¬Â°"<<sum / n << endl;
 	if (sum / 3 > 59)
 		cout << "yes" << endl;
 	else
