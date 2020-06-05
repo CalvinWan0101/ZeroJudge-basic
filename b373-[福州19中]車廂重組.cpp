@@ -2,19 +2,19 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//ªwªj±Æ§Ç­pºâ³Ì¤Ö±Æ§Ç¦¸¼Æ
+	//æ³¡æ²«æ’åºè¨ˆç®—æœ€å°‘æ’åºæ¬¡æ•¸
 	int count = 0;
 	int n;
-	cout << "¨®´[¼Æ¶q¡G";
+	cout << "è»Šå»‚æ•¸é‡ï¼š";
 	cin >> n;
 	int array[101];
 	for (int i = 1; i <= n; i++)
 	{
-		cout << "²Ä" << i << "¸`¨®´[¡G";
+		cout << "ç¬¬" << i << "ç¯€è»Šå»‚ï¼š";
 		cin >> array[i];
 	}
 	int buffer;
-	//±Æ§Ç¶}©l
+	//æ’åºé–‹å§‹
 	for (int i = 1; i <= n; i++)
 	{
 		for (int j = 1; j <= n - 1; j++)
@@ -26,7 +26,7 @@ int main(int argc, char** argv)
 				count++;
 			}
 	}
-	cout << "³Ì¤Ö»İ­n±ÛÂà" << count << "¦¸" << endl;
+	cout << "æœ€å°‘éœ€è¦æ—‹è½‰" << count << "æ¬¡" << endl;
 	system("PAUSE");
 	return 0;
 }
