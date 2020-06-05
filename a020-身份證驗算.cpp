@@ -2,7 +2,7 @@
 #include<string>
 #include<cstring>
 #include <sstream>
-//¤@­Ó¥Î¨ÓÂà´«¶}ÀY­^¤å¦r¥Àªº¤p¤p¨ç¼Æ
+//ä¸€å€‹ç”¨ä¾†è½‰æ›é–‹é ­è‹±æ–‡å­—æ¯çš„å°å°å‡½æ•¸
 int tran(char z[])
 {
 	int back;
@@ -94,9 +94,9 @@ int main(int argc, char** argv)
 {
 
 	char orgin[11];
-	cout << "±zªº¨­¥÷ÃÒ¡G";
+	cout << "æ‚¨çš„èº«ä»½è­‰ï¼š";
 	cin >> orgin;
-	//³Ğ«Ø¾ã¼Æ°}¦C®e¯Ç«á­±9­Ó¼Æ¦r
+	//å‰µå»ºæ•´æ•¸é™£åˆ—å®¹ç´å¾Œé¢9å€‹æ•¸å­—
 	int intarry[9];
 	for (int i = 0; i < 9; i++)
 	{
@@ -104,7 +104,7 @@ int main(int argc, char** argv)
 		transferA << orgin[i + 1];
 		transferA >> intarry[i];
 	}
-	//¥l³ê¦r¥À­pºâ¨ç¼Æ¡I¡I¡I
+	//å¬å–šå­—æ¯è¨ˆç®—å‡½æ•¸ï¼ï¼ï¼
 	int sum = tran(orgin) + intarry[0] * 8 + intarry[1] * 7 + intarry[2] * 6 + intarry[3] * 5 + intarry[4] * 4 + intarry[5] * 3 + intarry[6] * 2 + intarry[7] * 1 + intarry[8] * 1;
 	if (sum % 10 == 0)
 		cout << "real" << endl;
