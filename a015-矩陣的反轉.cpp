@@ -6,23 +6,23 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int a, b,i,j;
-	cout << "½Ğ¨Ì§Ç¿é¤Jy»Px" << endl;
+	cout << "è«‹ä¾åºè¼¸å…¥yèˆ‡x" << endl;
 	cin >> a >> b;
 	int array1[99][99];
 	int array2[99][99];
-	cout << "½Ğ¿é¤J¤¸¯À" << endl;
+	cout << "è«‹è¼¸å…¥å…ƒç´ " << endl;
 	for (i = 0; i <a ; i++)
 	{
 		for (j = 0l; j < b; j++)
 		{
 			cin >> array1[i][j];
-			cout << "²Ä(" << i<<","<< j<< ")­Ó¤¸¯À¿é¤J§¹²¦" << endl;
+			cout << "ç¬¬(" << i<<","<< j<< ")å€‹å…ƒç´ è¼¸å…¥å®Œç•¢" << endl;
 			array2[j][i] = array1[i][j];
 		}
 	};
 	cout << endl;
-	//¿é¥X©Ò¿é¤Jªº°}¦C
-	cout << "­ì°}¦C:" << endl;
+	//è¼¸å‡ºæ‰€è¼¸å…¥çš„é™£åˆ—
+	cout << "åŸé™£åˆ—:" << endl;
 	for (i = 0; i < a; i++)
 	{
 		for (j = 0; j < b; j++)
@@ -33,8 +33,8 @@ int main(int argc, char** argv)
 	}
 	cout << endl;
 
-	//¿é¥XÂà´««á
-	cout << "±ÛÂà«á" << endl;
+	//è¼¸å‡ºè½‰æ›å¾Œ
+	cout << "æ—‹è½‰å¾Œ" << endl;
 	for (i = 0; i < b; i++)
 	{
 		for (j = 0; j < a; j++)
