@@ -5,14 +5,14 @@ int main(int argc, char** argv)
 {
 	int number;
 	int array[1000] = { 0 };
-	cout << "¸ê®Æ¶q¡G";
+	cout << "è³‡æ–™é‡ï¼š";
 	cin >> number;
 	for (int i = 0; i < number; i++)
 	{
-		cout << "²Ä" << i + 1 << "­Ó¸ê®Æ¡G";
+		cout << "ç¬¬" << i + 1 << "å€‹è³‡æ–™ï¼š";
 		cin >> array[i];
 	}
-	//¥ı¨Ì·Ó­Ó¦ìªº¤j¤p±Æ§Ç
+	//å…ˆä¾ç…§å€‹ä½çš„å¤§å°æ’åº
 	int buffer;
 	for (int i = 0; i < number; i++)
 		for (int j = i + 1; j < number; j++)
@@ -24,22 +24,22 @@ int main(int argc, char** argv)
 				array[j] = buffer;
 			}
 		}
-	cout << "­Ó¦ì±Æ§Ç«á" << endl;
+	cout << "å€‹ä½æ’åºå¾Œ" << endl;
 	for (int i = 0; i < number; i++)
 		cout << array[i] << " ";
 
-	//±N­Ó¦ì¼Æ¬Û¦Pªº¶µ¥Ñ¤j¨ì¤p±Æ¦C
+	//å°‡å€‹ä½æ•¸ç›¸åŒçš„é …ç”±å¤§åˆ°å°æ’åˆ—
 	int start = 0;
 	int end;
 	int i;
 	while (true)
 	{
-		//·j´MendªºÂI
+		//æœå°‹endçš„é»
 		for (i = start;; i++)
 			if ((array[i] % 10) != (array[start] % 10))
 				break;
 		end = i - 1;
-		//¦bstart<=x<=endªº½d³ò·í¤¤¥H¤j¨ì¤p±Æ§Ç
+		//åœ¨start<=x<=endçš„ç¯„åœç•¶ä¸­ä»¥å¤§åˆ°å°æ’åº
 		for (int j = start; j <= end; j++)
 		{
 			for (int k = j + 1; k <= end; k++)
@@ -52,12 +52,12 @@ int main(int argc, char** argv)
 				}
 			}
 		}
-		//­«¸mstart
+		//é‡ç½®start
 		start = end + 1;
 		if (start == number)
 			break;
 	}
-	cout << "¥ş³¡±Æ§Ç§¹«á" << endl;
+	cout << "å…¨éƒ¨æ’åºå®Œå¾Œ" << endl;
 	for (int i = 0; i < number; i++)
 		cout << array[i] << " ";
 	system("PAUSE");
