@@ -3,7 +3,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int input;
-	cout << "�˴����Ʀr�G";
+	cout << "ÀË´úªº¼Æ¦r¡G";
 	cin >> input;
 	int sum = 0;
 	int i;
