@@ -3,13 +3,13 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int a;
-	cout << "­º¶µ¡G";
+	cout << "Â­ÂºÂ¶ÂµÂ¡G";
 	cin >> a;
 	int b;
-	cout << "¥½¶µ¡G";
+	cout << "Â¥Â½Â¶ÂµÂ¡G";
 	cin >> b;
 	int d;
-	cout << "¤½®t¡G";
+	cout << "Â¤Â½Â®tÂ¡G";
 	cin >> d;
 	for (int i = a; i <= b; i+=d)
 		cout << i << " ";
