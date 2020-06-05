@@ -8,18 +8,18 @@ int main(int argc, char** argv)
 	string Oin;
 	int password[4] = { 0 };
 	int input[4] = { 0 };
-	cout << "¥¿½T±K½X¡G";
+	cout << "æ­£ç¢ºå¯†ç¢¼ï¼š";
 	cin >> Opa;
-	cout << "±K½X¡G";
+	cout << "å¯†ç¢¼ï¼š";
 	cin >> Oin;
-	//Âà´«¥¿½T±K½X
+	//è½‰æ›æ­£ç¢ºå¯†ç¢¼
 	for (int i = 0; i < 4; i++)
 	{
 		stringstream transferA;
 		transferA << Opa[i];
 		transferA >> password[i];
 	}
-	//Âà´«¿é¤J±K½X
+	//è½‰æ›è¼¸å…¥å¯†ç¢¼
 	for (int i = 0; i < 4; i++)
 	{
 		stringstream transferB;
@@ -28,15 +28,15 @@ int main(int argc, char** argv)
 	}
 	int countpass[10] = { 0 };
 	int countin[10] = { 0 };
-	cout << "¥¿½T±K½X¡G";
+	cout << "æ­£ç¢ºå¯†ç¢¼ï¼š";
 	for (int i = 0; i < 4; i++)
 		cout << password[i]<<" ";
 	cout << endl;
-	cout << "¿é¤J±K½X¡G";
+	cout << "è¼¸å…¥å¯†ç¢¼ï¼š";
 	for (int i = 0; i < 4; i++)
 		cout << input[i]<<" ";
 
-	//¥ı­pºâp
+	//å…ˆè¨ˆç®—p
 	int p = 0;
 	for (int i = 0; i < 4; i++)
 		if (input[i] == password[i])
@@ -46,32 +46,32 @@ int main(int argc, char** argv)
 			password[i] = 0;
 		}
 	cout << endl << "p=" << p << endl;
-	//¥h±¼¤w¸g½T©w¥¿½Tªº°}¦C
-	cout << "¥h±¼¬Û¹ï«á¥¿½T±K½X¡G";
+	//å»æ‰å·²ç¶“ç¢ºå®šæ­£ç¢ºçš„é™£åˆ—
+	cout << "å»æ‰ç›¸å°å¾Œæ­£ç¢ºå¯†ç¢¼ï¼š";
 	for (int i = 0; i < 4; i++)
 		cout << password[i] << " ";
 	cout << endl;
-	cout << "¥h±¼¬Û¹ï«á¿é¤J±K½X¡G";
+	cout << "å»æ‰ç›¸å°å¾Œè¼¸å…¥å¯†ç¢¼ï¼š";
 	for (int i = 0; i < 4; i++)
 		cout << input[i] << " ";
-	//¿é¤J¥¿½T±K½X¥X²{ªº¼Æ¦r
+	//è¼¸å…¥æ­£ç¢ºå¯†ç¢¼å‡ºç¾çš„æ•¸å­—
 	for (int i = 0; i < 4; i++)
 		countpass[password[i]]++;
-	//¿é¤J±K½X¥X²{ªº¼Æ¦r
+	//è¼¸å…¥å¯†ç¢¼å‡ºç¾çš„æ•¸å­—
 	for (int i = 0; i < 4; i++)
 		countin[input[i]]++;
-	//´ú¸Õ
+	//æ¸¬è©¦
 	cout << endl;
-	cout << "¥¿½T±K½X¼Æ¦r¥X²{¦¸¼Æ" << endl;
+	cout << "æ­£ç¢ºå¯†ç¢¼æ•¸å­—å‡ºç¾æ¬¡æ•¸" << endl;
 	for (int i = 0; i < 10; i++)
 		cout << countpass[i] << " ";
 	cout << endl;
-	cout << "¿é¤J±K½X¼Æ¦r¥X²{¦¸¼Æ" << endl;
+	cout << "è¼¸å…¥å¯†ç¢¼æ•¸å­—å‡ºç¾æ¬¡æ•¸" << endl;
 	for (int i = 0; i < 10; i++)
 		cout << countin[i] << " ";
 	cout << endl;
-	//¹ï¤ñ¨â­Ó²Î­p¥Îªº°}¦C
-	//0ªºª¬ªp
+	//å°æ¯”å…©å€‹çµ±è¨ˆç”¨çš„é™£åˆ—
+	//0çš„ç‹€æ³
 	int q = 0;
 	if (countpass[0] != countin[0])
 		if (countpass[0] > countin[0])
