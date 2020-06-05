@@ -2,23 +2,23 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	cout << "¦r¦ê¡G";
+	cout << "å­—ä¸²ï¼š";
 	char A[8];
 	cin >> A;
 	int a[7];
 	int password[6];
-	//¦r¦ê¸ê®ÆÂà¾ã¼Æ
+	//å­—ä¸²è³‡æ–™è½‰æ•´æ•¸
 	for (int i = 0; i < 7; i++)
 		a[i] = A[i];
-	//­pºâ±K½X
+	//è¨ˆç®—å¯†ç¢¼
 	for (int i = 0; i < 6; i++)
 	{
 		password[i] = a[i] - a[i + 1];
 		if (password[i] < 0)
 			password[i] *= (-1);
 	}
-	//¦L¥X±K½X
-	cout << "±K½X¡G";
+	//å°å‡ºå¯†ç¢¼
+	cout << "å¯†ç¢¼ï¼š";
 	for (int i = 0; i < 6; i++)
 		cout << password[i];
 	system("PAUSE");
