@@ -3,23 +3,23 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int big;
-	cout << "キチ竇计秖";
+	cout << "骞虫皯绐熸暩閲忥細";
 	cin >> big;
 	int small;
-	cout << "饼╊埃计秖";
+	cout << "娆叉媶闄ゆ暩閲忥細";
 	cin >> small;
-	//だ
+	//鍒嗗瓙
 	long long son = 1;
 	for (int i = 0; i < small; i++)
 		son *= (big - i);
-	cout <<"だ"<<son << endl;
-	//だダ
+	cout <<"鍒嗗瓙"<<son << endl;
+	//鍒嗘瘝
 	long long mother = 1;
 	for (int i = small; i >= 1; i--)
 		mother *= i;
-	cout << "だダ"<<mother << endl;
+	cout << "鍒嗘瘝"<<mother << endl;
 	long long last = son / mother;
-	cout << "よ猭计" << last << endl;
+	cout << "鏂规硶鏁革細" << last << endl;
 	int count = 0;
 	while (true)
 	{
@@ -31,7 +31,7 @@ int main(int argc, char** argv)
 		else
 		{
 			count++;
-			cout <<"よ猭计"<< count << endl;
+			cout <<"鏂规硶浣嶆暩"<< count << endl;
 			break;
 		}
 
