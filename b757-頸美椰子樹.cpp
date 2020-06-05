@@ -3,9 +3,9 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int r;
-	cout << "¤âÁu¥b®|¡G";
+	cout << "Â¤Ã¢ÃuÂ¥bÂ®|Â¡G";
 	cin >> r;
-	cout << "¤j»L¥b®|¡G" << (r * 9) / 5 + 32 << endl;
+	cout << "Â¤jÂ»LÂ¥bÂ®|Â¡G" << (r * 9) / 5 + 32 << endl;
 	system("PAUSE");
 	return 0;
 }
