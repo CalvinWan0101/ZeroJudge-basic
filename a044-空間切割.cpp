@@ -3,7 +3,7 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int number;
-	cout << "¥­­±¼Æ¶q¡G";
+	cout << "Â¥Â­Â­Â±Â¼Ã†Â¶qÂ¡G";
 	cin >> number;
 	cout << (pow(number, 3) + 5 * number + 6) / 6 << endl;
 	system("PAUSE");
