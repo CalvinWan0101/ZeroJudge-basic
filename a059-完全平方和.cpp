@@ -3,14 +3,14 @@ using namespace std;
 int main(int argc, char** argv)
 {
 	int a, b,cou;
-	cout << "½Ð¿é¤J¨â¬Û²§¾ã¼Æ¡A¥ý¤p«á¤j" << endl;
+	cout << "è«‹è¼¸å…¥å…©ç›¸ç•°æ•´æ•¸ï¼Œå…ˆå°å¾Œå¤§" << endl;
 	cin >> a >> b;
 	for (int i = a; pow(i, 2) <= b; i++)
 	{
 		if ((pow(i, 2) >= a) && (pow(i, 2) <= b))
 			cou += pow(i, 2);
 	}
-	cout << "½d³ò¤º§¹¥þ¥­¤è©M¬°" << cou << endl;
+	cout << "ç¯„åœå…§å®Œå…¨å¹³æ–¹å’Œç‚º" << cou << endl;
 	system("PAUSE");
 	return 0;
 }
