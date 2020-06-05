@@ -7,7 +7,7 @@ int main(int argc, char** argv)
 	string input;
 	cin >> input;
 	
-	//�ˬd�榡�O�_�ŦX
+	//ÀË¬d®æ¦¡¬O§_²Å¦X
 	int sure=0;
 	for (int i = 0; i < input.length() - 1; i++)
 		if (input[i] > input[i + 1])
