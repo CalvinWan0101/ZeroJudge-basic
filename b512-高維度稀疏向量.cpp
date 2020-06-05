@@ -6,31 +6,31 @@ int main(int argc, char** argv)
 	string a;
 	string b;
 	int front = 0, back = 0, point = 0;
-	//buffer°}¦C¥Î¨Ó¼È®É¦s¨úÂà´«¦r¦ê
+	//bufferé™£åˆ—ç”¨ä¾†æš«æ™‚å­˜å–è½‰æ›å­—ä¸²
 	int buffer[100] = { 0 };
 	int sudden = 0;
-	//placeA¦s¤J¦ì¸m¡AnumberA¦s¤J¼Æ­È
+	//placeAå­˜å…¥ä½ç½®ï¼ŒnumberAå­˜å…¥æ•¸å€¼
 	int placeA[100] = { -1 };
 	int numberA[100] = { -1 };
-	//³B²z¿é¤JA¦r¦ê
-	cout << "¦V¶qA¡G" << endl;
+	//è™•ç†è¼¸å…¥Aå­—ä¸²
+	cout << "å‘é‡Aï¼š" << endl;
 	for (int o = 1;; o++)
 	{
 		cin >> a;
 		for (int i = 0; i < a.length(); i++)
 			if (a[i] == ':')
 				point = i;
-		//¡i:¡j«e¼Æ­È¦ì¸m(«D°O¾ĞÅé¦ì¸m,±q1¶}©l)
+		//ã€:ã€‘å‰æ•¸å€¼ä½ç½®(éè¨˜æ†¶é«”ä½ç½®,å¾1é–‹å§‹)
 		for (int i = 0; i < point; i++)
 			buffer[i] = a[i];
 		for (int i = 0; i < point; i++)
 			buffer[i] -= 48;
-		//Âà´«¬°¤@­Ó¾ã¼Æ¦s¶iÅÜ¼Æsudden¦A¦s¤JplaceA°}¦C
+		//è½‰æ›ç‚ºä¸€å€‹æ•´æ•¸å­˜é€²è®Šæ•¸suddenå†å­˜å…¥placeAé™£åˆ—
 		for (int i = 0; i < point; i++)
 			sudden += buffer[i] * pow(10, point - 1 - i);
 		placeA[o] = sudden;
 		sudden = 0;
-		//¡i:¡j«á¼Æ­È
+		//ã€:ã€‘å¾Œæ•¸å€¼
 		for (int i = point + 1; i < a.length(); i++)
 			buffer[i] = a[i];
 		for (int i = point + 1; i < a.length(); i++)
@@ -43,12 +43,12 @@ int main(int argc, char** argv)
 			break;
 		front = back = point = 0;
 	}
-	//placeB¦s¤J¦ì¸m¡AnumberB¦s¤J¼Æ­È
+	//placeBå­˜å…¥ä½ç½®ï¼ŒnumberBå­˜å…¥æ•¸å€¼
 	int placeB[100] = { -1 };
 	int numberB[100] = { -1 };
-	//³B²z¿é¤JB¦r¦ê
+	//è™•ç†è¼¸å…¥Bå­—ä¸²
 	
-	cout << "¦V¶qB¡G" << endl;
+	cout << "å‘é‡Bï¼š" << endl;
 	
 	for (int o = 1;; o++)
 	{
@@ -56,17 +56,17 @@ int main(int argc, char** argv)
 		for (int i = 0; i < b.length(); i++)
 			if (b[i] == ':')
 				point = i;
-		//¡i:¡j«e¼Æ­È¦ì¸m(«D°O¾ĞÅé¦ì¸m,±q1¶}©l)
+		//ã€:ã€‘å‰æ•¸å€¼ä½ç½®(éè¨˜æ†¶é«”ä½ç½®,å¾1é–‹å§‹)
 		for (int i = 0; i < point; i++)
 			buffer[i] = b[i];
 		for (int i = 0; i < point; i++)
 			buffer[i] -= 48;
-		//Âà´«¬°¤@­Ó¾ã¼Æ¦s¶iÅÜ¼Æsudden¦A¦s¤JplaceA°}¦C
+		//è½‰æ›ç‚ºä¸€å€‹æ•´æ•¸å­˜é€²è®Šæ•¸suddenå†å­˜å…¥placeAé™£åˆ—
 		for (int i = 0; i < point; i++)
 			sudden += buffer[i] * pow(10, point - 1 - i);
 		placeB[o] = sudden;
 		sudden = 0;
-		//¡i:¡j«á¼Æ­È
+		//ã€:ã€‘å¾Œæ•¸å€¼
 		for (int i = point + 1; i < b.length(); i++)
 			buffer[i] = b[i];
 		for (int i = point + 1; i < b.length(); i++)
@@ -79,15 +79,15 @@ int main(int argc, char** argv)
 			break;
 		front = back = point = 0;
 	}
-	//¶}©l¤ñ¸ûplaceA©MplaceBªº®t²§¡A¦pªG¨âªÌ¬Ò!=(-1)
-	//«h­pºâ¨âªÌ¹ïÀ³¦ì¸mnumberA*numberBªº­È
+	//é–‹å§‹æ¯”è¼ƒplaceAå’ŒplaceBçš„å·®ç•°ï¼Œå¦‚æœå…©è€…çš†!=(-1)
+	//å‰‡è¨ˆç®—å…©è€…å°æ‡‰ä½ç½®numberA*numberBçš„å€¼
 	int sum=0;
-	//³v¶µ¤ñ¸û
+	//é€é …æ¯”è¼ƒ
 	for (int i = 1;i<100; i++)
 		for(int j=1;j<100;j++)
 	if (placeA[i] == placeB[j] && placeA[i] != -1)
 		sum += numberA[i] * numberB[j];
-	cout << "³Ì²×­È¡G" << sum << endl;
+	cout << "æœ€çµ‚å€¼ï¼š" << sum << endl;
 	
 	system("PAUSE");
 	return 0;
