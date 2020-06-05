@@ -8,14 +8,14 @@ int main(int argc, char** argv)
 	if (pow(b,2) - 4 * a * c > 0) {
 		x1 = (-b + sqrt(b * b - 4 * a * c)) /( 2 * a);
 		x2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-		cout << "²Ä¤@¸Ñ x1=" << x1 << " , ²Ä¤G¸Ñµª x2=" << x2;
+		cout << "ç¬¬ä¸€è§£ x1=" << x1 << " , ç¬¬äºŒè§£ç­” x2=" << x2;
 	}
 	else if ((pow(b,2) - 4 * a * c) == 0) {
 		x3 = (-b + sqrt(b * b - 4 * a * c)) /( 2 * a);
-		cout << "°ß¤@¸Ñ=" << x3;
+		cout << "å”¯ä¸€è§£=" << x3;
 	}
 	else
-		cout << "µL¹ê¼Æ¸Ñ";
+		cout << "ç„¡å¯¦æ•¸è§£";
 	system("PAUSE");
 	return 0;
 }
