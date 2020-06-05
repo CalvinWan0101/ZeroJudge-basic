@@ -4,11 +4,11 @@ int main(int argc, char** argv)
 {
 	int n;
 	int array[100];
-	cout << "¶µ¼Æ¡G";
+	cout << "é …æ•¸ï¼š";
 	cin >> n;
 	int buffer = 0;
 	int sum = 0;
-	//­pºâ¤èµ{¦¡f(x)
+	//è¨ˆç®—æ–¹ç¨‹å¼f(x)
 	for (int i = 1; i <= n; i++)
 	{
 		buffer++;
@@ -16,7 +16,7 @@ int main(int argc, char** argv)
 		array[i] = sum;
 	}
 	cout << "f(" << n << ")=" << sum << endl;
-	//­pºâ¤èµ{¦¡g(x)
+	//è¨ˆç®—æ–¹ç¨‹å¼g(x)
 	int sumg = 0;
 	for (int i = 1; i <= n; i++)
 		sumg += array[i];
