@@ -3,14 +3,14 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//¥Øªº¡G§PÂ_©Ò¿é¤Jªº¦r¥À¬O§_¯à²Õ¦¨°j¤å
+	//ç›®çš„ï¼šåˆ¤æ–·æ‰€è¼¸å…¥çš„å­—æ¯æ˜¯å¦èƒ½çµ„æˆè¿´æ–‡
 	int array[27] = { 0 };
 	string input;
-	cout << "±ıÀËÅçªº¦r¦ê¡G";
+	cout << "æ¬²æª¢é©—çš„å­—ä¸²ï¼š";
 	cin >> input;
 	for (int i = 0; i < input.length(); i++)
 	{
-		//±N¦U¦r¥À¥X²{ªº¦¸¼Æ¦s¤J¹w¥ı³]¥ßªº¾ã¼Æ°}¦C·í¤¤
+		//å°‡å„å­—æ¯å‡ºç¾çš„æ¬¡æ•¸å­˜å…¥é å…ˆè¨­ç«‹çš„æ•´æ•¸é™£åˆ—ç•¶ä¸­
 		switch (input[i])
 		{
 		case 'a':
@@ -119,7 +119,7 @@ int main(int argc, char** argv)
 			break;
 		}
 	}
-	//¦s¨ú¥X²{¦¸¼Æ¬°°ò¼Æªº¦¸¼Æ
+	//å­˜å–å‡ºç¾æ¬¡æ•¸ç‚ºåŸºæ•¸çš„æ¬¡æ•¸
 	int count = 0;
 	for (int i = 1; i <= 26; i++)
 	{
