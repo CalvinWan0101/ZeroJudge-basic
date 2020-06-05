@@ -4,11 +4,11 @@ int main(int argc, char** argv)
 {
 	int H1, M1, H2, M2;
 	int need;
-	cout << "²{¦b®É¶¡¡G";
+	cout << "ç¾åœ¨æ™‚é–“ï¼š";
 	cin >> H1 >> M1;
-	cout << "µo¨®®É¶¡¡G";
+	cout << "ç™¼è»Šæ™‚é–“ï¼š";
 	cin >> H2 >> M2;
-	cout << "¨Ó¦^©Ò»İ®É¶¡¡G";
+	cout << "ä¾†å›æ‰€éœ€æ™‚é–“ï¼š";
 	cin >> need;
 	if (M1 > M2)
 	{
