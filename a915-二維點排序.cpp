@@ -33,7 +33,7 @@ int main(int argc, char** argv)
 	{
 		for (int j = i; j < n; j++)
 		{
-			if (array[i][1] > array[j][1]&&array[i][0]==array[i][0])
+			if (array[i][1] > array[j][1]&&array[i][0]==array[j][0])
 			{
 				buffer0 = array[i][0];
 				buffer1 = array[i][1];
