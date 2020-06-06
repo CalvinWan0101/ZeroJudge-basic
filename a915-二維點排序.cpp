@@ -7,9 +7,9 @@ int main(int argc, char** argv)
 	int array[1000][2];
 	for (int i = 0; i < n; i++)
 		cin >> array[i][0] >> array[i][1];
-	//¿ï¾Ü±Æ§Ç
+	//選擇排序
 	int buffer0, buffer1;
-	//¥ý±Æarray[0]
+	//先排array[0]
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i; j < n; j++)
@@ -25,10 +25,10 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	cout << "array[0]±Æ§Ç«á" << endl;
+	cout << "array[0]排序後 << endl;
 	for (int i = 0; i < n; i++)
 		cout << array[i][0] << " " << array[i][1] << endl;
-	//¦A±Æarray[1]
+	//再排array[1]
 	for (int i = 0; i < n; i++)
 	{
 		for (int j = i; j < n; j++)
@@ -44,7 +44,7 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	cout << "array[1]±Æ§Ç«á" << endl;
+	cout << "array[1]排序後 << endl;
 	for (int i = 0; i < n; i++)
 		cout << array[i][0] << " " << array[i][1] << endl;
 	system("PAUSE");
