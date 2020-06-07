@@ -7,11 +7,8 @@ int main(int argc, char** argv)
 	//f(3)=f(2)+2
 	//f(n)=1+(1+n-1)*n/2=1+pow(n,2)/2
 	int n;
-	cin >> n;
-	if (n != 1)
-		cout << 1 + pow(n, 2) / 2 << endl;
-	else
-		cout << "1" << endl;
+	while (cin >> n)
+		cout << 1 + n * (n - 1) / 2 << endl;
 	system("PAUSE");
 	return 0;
 }
