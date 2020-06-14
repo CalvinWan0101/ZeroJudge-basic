@@ -3,7 +3,6 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	//¤j¼Æ°£ªk
 	string a;
 	int array[10000] = { 0 };
 	int sum;
@@ -15,8 +14,8 @@ int main(int argc, char** argv)
 			array[i] = a[i];
 			array[i] -= 48;
 		}
-		//¦¹®É¡i-¡jªº­È¬°-3
-		//¥¿¼Æ
+		//æ­¤æ™‚ã€-ã€‘çš„å€¼ç‚º-3
+		//æ­£æ•¸
 		if (array[0] != -3)
 		{
 			for (int i = 0; i < a.length(); i++)
@@ -29,10 +28,10 @@ int main(int argc, char** argv)
 					cout << "yes" << endl;
 			}
 		}
-		//ÃD¥Ø»{©w0¬°3ªº­¿¼Æ
+		//é¡Œç›®èªå®š0ç‚º3çš„å€æ•¸
 		else if (array[0] == 0)
 			cout << "yes" << endl;
-		//­t¼Æ
+		//è² æ•¸
 		else
 		{
 			for (int i = 1; i < a.length(); i++)
