@@ -28,9 +28,6 @@ int main(int argc, char** argv)
 					cout << "yes" << endl;
 			}
 		}
-		//題目認定0為3的倍數
-		else if (array[0] == 0)
-			cout << "yes" << endl;
 		//負數
 		else
 		{
