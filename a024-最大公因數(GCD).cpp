@@ -2,15 +2,15 @@
 using namespace std;
 int main(int argc, char** argv)
 {
-	int a,b;
-	cin >> a>>b;
-	int god = a;
-	for (; god >= 1; god--)
+	int a,b,god;
+	while (cin >> a >> b)
 	{
-		if (b% god == 0)
-			break;
+		god = a;
+		for (; god >= 1; god--)
+			if (b % god == 0&&a%god==0)
+				break;
+		cout << god<<endl;
 	}
-	cout << god;
 	system("PAUSE");
 	return 0;
 }
