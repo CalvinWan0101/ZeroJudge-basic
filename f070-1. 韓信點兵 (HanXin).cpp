@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -11,4 +11,4 @@ int main()
 				break;
 			}
 	return 0;
-}*/
+}
