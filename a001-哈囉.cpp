@@ -1,10 +1,11 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main(int argc, char** argv)
 {
-	char a;
-	cin >> a;
-	cout << "hello, world" << endl;
+	string a;
+	while(cin >> a)
+	cout << "hello"<< a << endl;
 	system("PAUSE");
 	return 0;
 }
