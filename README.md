@@ -5,4 +5,6 @@ https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
 有什麼問題或是我的程式有錯都可以直接email給我
 
-當個快樂的資工宅
+這只是個開始朋友
+
+等我考完學測我就來屠榜！
