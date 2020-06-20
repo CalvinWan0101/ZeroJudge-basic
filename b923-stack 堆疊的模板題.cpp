@@ -1,57 +1,45 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int n;
-	cout << "操作量：";
-	cin >> n;
-	int input;
-	int array[100] = {0};
-	//存取命令列
-	int command[100][2] = {0};
-	for (int i = 0; i < n; i++)
+	//1-刪除頂端元素
+	//2-輸出頂端元素
+	//3-丟數字進堆疊
+	int n, a, array[100001] = { -1 }, b;
+	while (cin >> n)
 	{
-		cin >> command[i][0];
-		if (command[i][0] == 3)
-			cin >> command[i][1];
-	}
-	cout << "預覽命令列" << endl;
-	for (int i = 0; i < n; i++)
-		cout << command[i][0]<<" "<<command[i][1]<<endl;
-	cout << endl;
-	
-	for (int i = 0; i < n; i++)
-	{
-		switch (command[i][0])
+		for (int i = 0; i < n; i++)
 		{
-			//刪除
-		case 1:
-			for (int i = 0; i < 100; i++)
-				if (array[i] != 0)
-				{
-					array[i] = 0;
-					break;
-				}
-			break;
-			//輸出頂端元素
-		case 2:
-			for (int i = 0; i < 100; i++)
-				if (array[i] != 0)
-				{
-					cout << array[i] << endl;
-					break;
-				}
-			break;
-			//讀入一個整數進入堆疊
-		case 3:
-			for (int j = 99; j >= 0; j--)
-				if (array[j] == 0)
-				{
-					array[j] = command[i][1];
-					break;
-				}
+			cin >> a;
+			if (a == 1)
+			{
+				for (int i = 0; i < 100001; i++)
+					if (array[i] == -1)
+					{
+						array[i - 1] = -1;
+						break;
+					}
+			}
+			else if (a == 2)
+			{
+				for (int i = 0; i < 100001; i++)
+					if (array[i] == -1)
+					{
+						cout << array[i - 1] << endl;
+						break;
+					}
+			}
+			else if (a == 3)
+			{
+				cin >> b;
+				for (int i = 0; i < 100001; i++)
+					if (array[i] == -1)
+					{
+						array[i] = b;
+						break;
+					}
+			}
 		}
 	}
-	system("PAUSE");
 	return 0;
 }
