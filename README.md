@@ -1,5 +1,5 @@
 # ZeroJudge-Basic
-高中程式解題系統(基礎題庫302題)
+高中程式解題系統(基礎題庫)
 
 https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
