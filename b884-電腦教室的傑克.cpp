@@ -1,18 +1,22 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int x;
-	int y;
-	cin >> x >> y;
-	int r = sqrt(x + y);
-	int yee = 100 - pow(r, 2);
-	if (yee <= 30)
-		cout << "sad!" << endl;
-	else if (yee <= 60)
-		cout << "hmm~~" << endl;
-	else if (yee < 100)
-		cout << "Happyyummy" << endl;
-	system("PAUSE");
+	double x, y, a;
+	int n;
+	while (cin >> n)
+		for (int i = 0; i < n; i++)
+		{
+			cin >> x >> y;
+			a = 100 - (x + y);
+			if (a <= 30 && a > 0)
+				cout << "sad!" << endl;
+			else if (a <= 60 && a > 0)
+				cout << "hmm~~" << endl;
+			else if (a < 100 && a>0)
+				cout << "Happyyummy" << endl;
+			else
+				cout << "evil!!" << endl;
+		}
 	return 0;
 }
