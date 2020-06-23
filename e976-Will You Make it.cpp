@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 int main()
 {
@@ -9,4 +9,4 @@ int main()
 		else
 			cout << h << " " << d << " " << v << ". I will be late!" << endl;
 	return 0;
-}*/
+}
