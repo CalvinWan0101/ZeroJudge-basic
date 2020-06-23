@@ -1,29 +1,41 @@
 #include <iostream>
-#include <string>
+#include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	string a;
-	int start, end;
+	int start, end, len;
 	while (getline(cin, a))
 	{
+		len = a.length();
+		start = 0;
 		while (true)
 		{
-			start = 0;
-			for (int i = start; i < a.length(); i++)
-				if (a[i] == ' ' || i == a.length() - 1)
-				{
-					end = i;
+			for (end = start; end < len; end++)
+				if (a[end] == ' ')
 					break;
-				}
 			for (int i = start; i < end; i++)
-				cout << a[i];
-			cout << endl;
-			if (end == a.length() - 1)
+				if (i == start && end == start + 1)
+				{
+					a[i] -= 32;
+					cout << a[i] << endl;
+				}
+				else if (i == start)
+				{
+					a[i] -= 32;
+					cout << a[i];
+				}
+				else if (i == end - 1)
+					cout << a[i] << endl;
+				else
+					cout << a[i];
+			if (end >= len - 1)
 				break;
-			start = end + 1;
+			else
+				for (start = end; start < len; start++)
+					if (a[start] != ' ')
+						break;
 		}
 	}
-	system("PAUSE");
 	return 0;
 }
