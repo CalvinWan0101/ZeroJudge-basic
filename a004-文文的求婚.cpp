@@ -1,20 +1,13 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	//西元年被4整除且不被100整除，或被400整除者即為閏年
-	int year;
-	for(int i=1;i<=2;i++)
+	int y;
+	while (cin >> y)
 	{
-		cout << "請輸入您所想要查詢的年份" << endl;
-	cin >> year;
-	if (year % 400 == 0)
-		cout << year << "年是閏年" << endl;
-	else if (year % 4 == 0 && year % 100 != 0)
-		cout << year << "年是閏年" << endl;
-	else
-		cout << year << "是平年" << endl;
+		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
+			cout << "閏年" << endl;
+		else
+			cout << "平年" << endl;
 	}
-	system("PAUSE");
-	return 0;
 }
