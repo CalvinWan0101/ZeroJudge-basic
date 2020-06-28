@@ -14,6 +14,5 @@ int main(int argc, char** argv)
 			e = d * (b / a);
 		cout << a << " " << b << " " << c << " " << d << " " << e << " " << endl;
 	}
-	system("PAUSE");
 	return 0;
 }
