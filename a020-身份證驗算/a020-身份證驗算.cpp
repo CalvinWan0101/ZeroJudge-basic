@@ -94,7 +94,6 @@ int main(int argc, char** argv)
 {
 
 	char orgin[11];
-	cout << "您的身份證：";
 	cin >> orgin;
 	//創建整數陣列容納後面9個數字
 	int intarry[9];
@@ -111,6 +110,5 @@ int main(int argc, char** argv)
 	else
 		cout << "fake" << endl;
 
-	system("PAUSE");
 	return 0;
 }
