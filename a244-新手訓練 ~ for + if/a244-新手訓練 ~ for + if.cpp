@@ -1,19 +1,13 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int number;
-	int a, b, c;
-	cout << "¼Æ¾Ú²Õ¼Æ¡G";
-	cin >> number;
-	for (int i = 0; i < number; i++)
+	int a, n;
+	long long int b, c;
+	cin >> n;
+	for (int i = 1; i <= n; i++)
 	{
-		cout << "a=";
-		cin >> a;
-		cout << "b=";
-		cin >> b;
-		cout << "c=";
-		cin >> c;
+		cin >> a >> b >> c;
 		switch (a)
 		{
 		case 1:
@@ -29,8 +23,6 @@ int main(int argc, char** argv)
 			cout << b / c << endl;
 			break;
 		}
-		cout << endl;
 	}
-	system("PAUSE");
 	return 0;
 }
