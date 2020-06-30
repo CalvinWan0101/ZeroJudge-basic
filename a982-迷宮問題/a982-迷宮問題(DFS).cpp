@@ -1,13 +1,13 @@
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 int length, m = 100000;
 char map[101][101];
 int bucket[101][101] = { 0 };
-//°_ÂI©T©w(2,2),²×ÂI©T©w(length-1,length-1)
+//èµ·é»å›ºå®š(2,2),çµ‚é»å›ºå®š(length-1,length-1)
 void dfs(int y, int x, int step)
 {
 	int bx, by;
-	//¥k¤W¥ª¤U
+	//å³ä¸Šå·¦ä¸‹
 	int way[4][2] = { {0,1},{-1,0},{0,-1},{1,0} };
 	if (x == length - 1 && y == length - 1)
 	{
@@ -44,4 +44,4 @@ int main()
 			cout << m << '\n';
 	}
 	return 0;
-}*/
+}
