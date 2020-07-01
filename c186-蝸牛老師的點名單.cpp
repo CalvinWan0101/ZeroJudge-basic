@@ -1,33 +1,30 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	string a;
-	//start為起始點，end為結束後一點
-	int start = 0, end = 0;
-	getline(cin, a);
-	while (true)
+	int start, end;
+	while (getline(cin, a))
 	{
-		//尋找end
-		for (int i = start; i < a.length(); i++)
-			if (a[i] == ' ' || i == a.length() - 1)
-			{
-				end = i;
+		start = 0;
+		while (true)
+		{
+			for (end = start; end < a.length(); end++)
+				if (a[end] == ' ')
+					break;
+			if (end != a.length() - 1)
+				for (int i = start; i < end; i++)
+					cout << a[i];
+			else
+				for (int i = start; i <= end; i++)
+					cout << a[i];
+			cout << endl;
+			if (end >= a.length() - 1)
 				break;
-			}
-		if (end != a.length() - 1)
-			for (int i = start; i < end; i++)
-				cout << a[i];
-		else
-			for (int i = start; i <= end; i++)
-				cout << a[i];
-		cout << endl;
-		if (end == a.length() - 1)
-			break;
-		//更新start
-		start = end + 1;
+			else
+				start = end + 1;
+		}
 	}
-	system("PAUSE");
 	return 0;
 }
