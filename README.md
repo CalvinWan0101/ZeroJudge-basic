@@ -5,7 +5,7 @@ https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
 在嘗試過很多種分類方法後
 
-我覺得還是每一題都開一個專屬資料夾
+我覺得還是每一題都開一個專屬資料夾最NICE
 
 以後如果學了其他語言，一樣的題目就可以放在一起
 
