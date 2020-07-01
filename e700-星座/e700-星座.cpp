@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <string>
 using namespace std;
 int main()
@@ -13,25 +13,25 @@ int main()
 			array[i] = a[i];
 			array[i] -= 48;
 		}
-		//³æ³æ
+		//å–®å–®
 		if (a.length() == 3)
 		{
 			m = array[0];
 			d = array[2];
 		}
-		//Âù³æ
+		//é›™å–®
 		else if (a.length() == 4 && array[2] == -1)
 		{
 			m = array[0] * 10 + array[1];
 			d = array[3];
 		}
-		//³æÂù
+		//å–®é›™
 		else if (a.length() == 4 && array[1] == -1)
 		{
 			m = array[0];
 			d = array[2] * 10 + array[3];
 		}
-		//ÂùÂù
+		//é›™é›™
 		else if (a.length() == 5)
 		{
 			m = array[0] * 10 + array[1];
@@ -41,76 +41,76 @@ int main()
 		{
 		case 1:
 			if (d >= 21)
-				cout << "¤ô²~®y" << endl;
+				cout << "æ°´ç“¶åº§" << endl;
 			else
-				cout << "¼¯½~®y" << endl;
+				cout << "æ‘©ç¾¯åº§" << endl;
 			break;
 		case 2:
 			if (d >= 20)
-				cout << "Âù³½®y" << endl;
+				cout << "é›™é­šåº§" << endl;
 			else
-				cout << "¤ô²~®y" << endl;
+				cout << "æ°´ç“¶åº§" << endl;
 			break;
 		case 3:
 			if (d >= 21)
-				cout << "¨d¦Ï®y" << endl;
+				cout << "ç‰¡ç¾Šåº§" << endl;
 			else
-				cout << "Âù³½®y" << endl;
+				cout << "é›™é­šåº§" << endl;
 			break;
 		case 4:
 			if (d >= 21)
-				cout << "ª÷¤û®y" << endl;
+				cout << "é‡‘ç‰›åº§" << endl;
 			else
-				cout << "¨d¦Ï®y" << endl;
+				cout << "ç‰¡ç¾Šåº§" << endl;
 			break;
 		case 5:
 			if (d >= 22)
-				cout << "Âù¤l®y" << endl;
+				cout << "é›™å­åº§" << endl;
 			else
-				cout << "ª÷¤û®y" << endl;
+				cout << "é‡‘ç‰›åº§" << endl;
 			break;
 		case 6:
 			if (d >= 22)
-				cout << "¥¨ÃÉ®y" << endl;
+				cout << "å·¨èŸ¹åº§" << endl;
 			else
-				cout << "Âù¤l®y" << endl;
+				cout << "é›™å­åº§" << endl;
 			break;
 		case 7:
 			if (d >= 23)
-				cout << "·à¤l®y" << endl;
+				cout << "ç…å­åº§" << endl;
 			else
-				cout << "¥¨ÃÉ®y" << endl;
+				cout << "å·¨èŸ¹åº§" << endl;
 			break;
 		case 8:
 			if (d >= 22)
-				cout << "³B¤k®y" << endl;
+				cout << "è™•å¥³åº§" << endl;
 			else
-				cout << "·à¤l®y" << endl;
+				cout << "ç…å­åº§" << endl;
 			break;
 		case 9:
 			if (d >= 24)
-				cout << "¤Ñ¯¯®y" << endl;
+				cout << "å¤©ç§¤åº§" << endl;
 			else
-				cout << "³B¤k®y" << endl;
+				cout << "è™•å¥³åº§" << endl;
 			break;
 		case 10:
 			if (d >= 24)
-				cout << "¤ÑÃÈ®y" << endl;
+				cout << "å¤©è åº§" << endl;
 			else
-				cout << "¤Ñ¯¯®y" << endl;
+				cout << "å¤©ç§¤åº§" << endl;
 			break;
 		case 11:
 			if (d >= 23)
-				cout << "®g¤â®y" << endl;
+				cout << "å°„æ‰‹åº§" << endl;
 			else
-				cout << "¤ÑÃÈ®y" << endl;
+				cout << "å¤©è åº§" << endl;
 			break;
 		case 12:
 			if (d >= 23)
-				cout << "¼¯½~®y" << endl;
+				cout << "æ‘©ç¾¯åº§" << endl;
 			else
-				cout << "®g¤â®y" << endl;
+				cout << "å°„æ‰‹åº§" << endl;
 		}
 	}
 	return 0;
-}*/
+}
