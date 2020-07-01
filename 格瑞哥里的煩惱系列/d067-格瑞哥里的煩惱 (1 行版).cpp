@@ -1,15 +1,14 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int a;
 	while (cin >> a)
 	{
 		if (a % 4 == 0 & a % 100 != 0 || a % 400 == 0)
-			cout << "a leap year" << endl;
+			cout << "a leap year" << '\n';
 		else
-			cout << "a normal year" << endl;
+			cout << "a normal year" << '\n';
 	}
-	system("PAUSE");
 	return 0;
 }
