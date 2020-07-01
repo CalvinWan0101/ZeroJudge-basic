@@ -1,27 +1,24 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int a, b;
 	char c;
 	while (cin >> a >> c >> b)
-	{
 		switch (c)
 		{
 		case '+':
-			cout << a + b << endl;
+			cout << a + b << '\n';
 			break;
 		case '-':
-			cout << a - b << endl;
+			cout << a - b << '\n';
 			break;
 		case '*':
-			cout << a * b << endl;
+			cout << a * b << '\n';
 			break;
 		case '/':
-			cout << a / b << endl;
+			cout << a / b << '\n';
 			break;
 		}
-	}
-	system("PAUSE");
 	return 0;
 }
