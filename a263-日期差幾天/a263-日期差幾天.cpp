@@ -11,7 +11,6 @@ int fun(int y, int m, int d)
 	int month = 0;
 	for (int i = 0; i < m - 1; i++)
 		month += arr[i];
-	//檢測輸入進來的年份是否是閏年
 	return  year + month + d;
 }
 int main()
