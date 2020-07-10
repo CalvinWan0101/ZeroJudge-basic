@@ -37,10 +37,10 @@ int main(int argc, char** argv)
 					r = j;
 					break;
 				}
-			//¥ª¥k³£¦³³òÄæ
+			//å·¦å³éƒ½æœ‰åœæ¬„
 			if (left != 0 && right != 0)
 			{
-				//¦³ÂÎ¥B¦b³òÄæ¤º
+				//æœ‰èŸ²ä¸”åœ¨åœæ¬„å…§
 				if (r<right && r != 0 || left>l && l != 0)\
 					continue;
 				else
