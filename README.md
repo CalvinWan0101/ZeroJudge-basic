@@ -15,6 +15,6 @@ https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
 有些我覺得沒什麼好寫的可能就提一下這一題需要注意的點(ex.測資問題,題目設計瑕疵)
 
-```
-cout<<endl;
+```c++
+C++ Primer
 ```
