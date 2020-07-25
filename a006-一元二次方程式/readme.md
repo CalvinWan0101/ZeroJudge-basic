@@ -1,9 +1,11 @@
 https://zerojudge.tw/ShowProblem?problemid=a006
 先用判別式判斷解的狀況
 分別為：
-.無解
-.唯一解
-.兩相異解
+
+-無解
+-唯一解
+-兩相異解
+
 再用公式去算解
 
 ### 特別注意
