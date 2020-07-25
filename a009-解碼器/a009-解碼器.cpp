@@ -1,7 +1,7 @@
 #include <iostream>
 #include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	string a;
 	getline(cin, a);
@@ -10,5 +10,4 @@ int main(int argc, char** argv)
 		char e = a[i] - 7;
 		cout << e;
 	}
-	return 0;
 }
