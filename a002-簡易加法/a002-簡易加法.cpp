@@ -1,8 +1,8 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-	string a;
-	while(cin >> a)
-	cout << "hello, "<< a << '\n';
+	int a, b;
+	while (cin >> a >> b)
+		cout << a + b << '\n';
 }
