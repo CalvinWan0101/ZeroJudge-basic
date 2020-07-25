@@ -1,23 +1,19 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int month, day;
-	int S;
 	while (cin >> month >> day)
-	{
-		S = (month * 2 + day) % 3;
-		switch (S)
+		switch ((month * 2 + day) % 3)
 		{
 		case 0:
-			cout << "普通" << endl;
+			cout << "普通" << '\n';
 			break;
 		case 1:
-			cout << "吉" << endl;
+			cout << "吉" << '\n';
 			break;
 		case 2:
-			cout << "大吉" << endl;
+			cout << "大吉" << '\n';
+			break;
 		}
-	}
-	return 0;
 }
