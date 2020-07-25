@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int t;
 	int a, b, c, d, e;
@@ -12,7 +12,6 @@ int main(int argc, char** argv)
 			e = d + (b - a);
 		else
 			e = d * (b / a);
-		cout << a << " " << b << " " << c << " " << d << " " << e << " " << endl;
+		cout << a << " " << b << " " << c << " " << d << " " << e << " " << '\n';
 	}
-	return 0;
 }
