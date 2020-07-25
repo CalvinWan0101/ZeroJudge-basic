@@ -1,10 +1,9 @@
 https://zerojudge.tw/ShowProblem?problemid=a006
 先用判別式判斷解的狀況
-分別為：
-
-* 無解
-* 唯一解
-* 兩相異解
+-|-
+Case 1|無解
+Case 2|唯一解
+Case 3|兩相異解
 
 再用公式去算解
 
