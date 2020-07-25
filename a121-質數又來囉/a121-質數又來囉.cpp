@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <cmath>
 using namespace std;
 int main()
 {
@@ -24,7 +24,6 @@ int main()
 			if (flag != 0)
 				count++;
 		}
-		cout << count << endl;
+		cout << count << '\n';
 	}
-	return 0;
 }
