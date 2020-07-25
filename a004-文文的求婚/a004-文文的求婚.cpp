@@ -6,8 +6,8 @@ int main()
 	while (cin >> y)
 	{
 		if (y % 4 == 0 && y % 100 != 0 || y % 400 == 0)
-			cout << "閏年" << endl;
+			cout << "閏年" << '\n';
 		else
-			cout << "平年" << endl;
+			cout << "平年" << '\n';
 	}
 }
