@@ -1,4 +1,4 @@
-https://zerojudge.tw/ShowProblem?problemid=a006
+題目鏈接 ▶ https://zerojudge.tw/ShowProblem?problemid=a006
 先用判別式判斷解的狀況,狀況如下
 
 * 無解
