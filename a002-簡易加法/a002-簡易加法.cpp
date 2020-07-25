@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int a, b;
-	while(cin>>a>>b)
-		cout<<a+b<<endl;
-	return 0;
+	string a;
+	while(cin >> a)
+	cout << "hello, "<< a << '\n';
 }
