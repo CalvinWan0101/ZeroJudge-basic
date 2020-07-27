@@ -1,7 +1,7 @@
 #include <iostream>
 #include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	//解題思路
 	//羅馬數字一組字母代表一位數字
