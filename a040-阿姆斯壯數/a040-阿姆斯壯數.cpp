@@ -1,8 +1,6 @@
 #include<iostream>
-#include<iomanip>
 #include<cmath>
 using namespace std;
-
 int main()
 {
 	int a, b;
@@ -31,8 +29,8 @@ int main()
 
 		}
 		if (flag)
-			cout << "none" << endl;
+			cout << "none" << '\n';
 		else
-			cout << endl;
+			cout << '\n';
 	}
 }
