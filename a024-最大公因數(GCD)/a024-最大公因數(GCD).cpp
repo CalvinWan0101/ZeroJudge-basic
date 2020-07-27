@@ -9,6 +9,5 @@ int main()
 {
 	int a, b;
 	while (cin >> a >> b)
-		cout << gcd(a, b) << endl;
-	return 0;
+		cout << gcd(a, b) << '\n';
 }
