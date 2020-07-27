@@ -1,7 +1,7 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int a;
 	int array[1000] = { 0 };
@@ -20,9 +20,8 @@ int main(int argc, char** argv)
 				}
 		for (int i = 0; i < a; i++)
 			if (i == a - 1)
-				cout << array[i] << endl;
+				cout << array[i] << '\n';
 			else
 				cout << array[i] << " ";
 	}
-	return 0;
 }
