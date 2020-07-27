@@ -13,7 +13,6 @@ int main()
 			score = 60 + 20 + (in - 20) * 1;
 		else
 			score = 100;
-		cout << score << endl;
+		cout << score << '\n';
 	}
-	return 0;
 }
