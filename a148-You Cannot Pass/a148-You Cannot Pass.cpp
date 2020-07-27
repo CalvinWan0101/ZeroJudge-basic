@@ -12,9 +12,8 @@ int main()
 			sum += buffer;
 		}
 		if (sum <= 59 * n)
-			cout << "yes" << endl;
+			cout << "yes" << '\n';
 		else
-			cout << "no" << endl;
+			cout << "no" << '\n';
 	}
-	return 0;
 }
