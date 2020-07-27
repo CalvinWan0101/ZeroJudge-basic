@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int array[101][101];
 	int after[101][101];
@@ -17,8 +17,7 @@ int main(int argc, char** argv)
 		{
 			for (int j = 1; j <= y; j++)
 				cout << after[i][j] << " ";
-			cout << endl;
+			cout << '\n';
 		}
 	}
-	return 0;
 }
