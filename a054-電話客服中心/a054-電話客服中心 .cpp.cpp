@@ -14,7 +14,6 @@ int main()
 		for (int i = 0; i < 26; i++)
 			if (a[i] == num)
 				cout << char(i + 65);
-		cout << endl;
+		cout << '\n';
 	}
-	return 0;
 }
