@@ -5,8 +5,7 @@ int main()
 	int n, m;
 	while (cin >> n >> m)
 		if (n == m)
-			cout << m << endl;
+			cout << m << '\n';
 		else
-			cout << m + 1 << endl;
-	return 0;
+			cout << m + 1 << '\n';
 }
