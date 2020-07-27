@@ -1,4 +1,4 @@
-https://zerojudge.tw/ShowProblem?problemid=a022
+題目鏈接 ▶ https://zerojudge.tw/ShowProblem?problemid=a022
 輸入一個string變數
 然後一個迴圈從第一個掃到最後一個
 如果第i個跟第a.length()-1-i不同
