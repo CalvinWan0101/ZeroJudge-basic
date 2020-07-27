@@ -1,4 +1,4 @@
-https://zerojudge.tw/ShowProblem?problemid=a058
+題目鏈接 ▶ https://zerojudge.tw/ShowProblem?problemid=a058
 條件判斷，然後題目輸出的選項好像怪怪的
 if (i % 3 == 0)
   a++;
