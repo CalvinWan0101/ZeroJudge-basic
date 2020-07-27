@@ -15,7 +15,6 @@ int main()
 		}
 		for (int i = 1; i <= 6; i++)
 			cout << array[i];
-		cout << endl;
+		cout << '\n';
 	}
-	return 0;
 }
