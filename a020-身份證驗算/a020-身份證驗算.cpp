@@ -1,6 +1,5 @@
 #include <iostream>
 #include<string>
-#include<cstring>
 #include <sstream>
 //一個用來轉換開頭英文字母的小小函數
 int tran(char z[])
@@ -90,9 +89,8 @@ int tran(char z[])
 	return (back / 10) + (back % 10) * 9;
 }
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-
 	char orgin[11];
 	cin >> orgin;
 	//創建整數陣列容納後面9個數字
@@ -109,6 +107,4 @@ int main(int argc, char** argv)
 		cout << "real" << endl;
 	else
 		cout << "fake" << endl;
-
-	return 0;
 }
