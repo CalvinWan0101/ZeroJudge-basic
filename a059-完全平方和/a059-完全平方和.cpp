@@ -27,7 +27,6 @@ int main()
 			}
 		for (int i = min; i <= max; i++)
 			count += array[i];
-		cout << "Case " << i << ": " << count << endl;
+		cout << "Case " << i << ": " << count << '\n';
 	}
-	return 0;
 }
