@@ -1,4 +1,4 @@
-https://zerojudge.tw/ShowProblem?problemid=d124
+題目鏈接 ▶ https://zerojudge.tw/ShowProblem?problemid=d124
 建立一個string來存輸入的原始數據
 建立一個int array然後轉換string每一位存入array
 int sum=0
