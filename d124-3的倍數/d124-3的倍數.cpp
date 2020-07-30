@@ -1,7 +1,7 @@
 #include <iostream>
 #include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	string a;
 	int array[10000] = { 0 };
@@ -42,6 +42,4 @@ int main(int argc, char** argv)
 			}
 		}
 	}
-	system("PAUSE");
-	return 0;
 }
