@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	int bucket[27] = { 0 };
 	string input;
@@ -20,9 +20,8 @@ int main(int argc, char** argv)
 			if (bucket[i] % 2 != 0)
 				count++;
 		if (count >= 2)
-			cout << "no..." << endl;
+			cout << "no..." << '\n';
 		else
-			cout << "yes !" << endl;
+			cout << "yes !" << '\n';
 	}
-	return 0;
 }
