@@ -20,21 +20,9 @@
 
 https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
-## 開始使用
+## 使用說明
 
-請使用以下指令啟動後台:
-
-``` bash
-npm install 
-```
-安裝dependencies (只有第一次需要)
-
-``` bash
-npm run dev // 開發模式
-// or
-npm start // 正式模式
-```
-啟動後台
+每題一個資料夾,裡面有一個readme記錄我當下解題的想法,然後我打算之後再去補充不同語言的解法(等我學會了之後XD)
 
 ## 開發
 
