@@ -16,10 +16,9 @@
 
 這裡是高中程式解題系統基礎題庫的一些小小參考,有些題目還有些問題所以如果要參考前歡迎先貼上去測試是否可以AC~
 
-## 架構
+## 題目鏈接
 
-- Node.js
-- Express
+https://zerojudge.tw/Problems?tabid=BASIC#tab00
 
 ## 開始使用
 
