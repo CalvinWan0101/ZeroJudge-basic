@@ -1,9 +1,10 @@
 #include <iostream>
-#include <string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	string a, b;
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+   string a, b;
 	int start = 0, end = 0;
 	while (cin >> a)
 	{
@@ -11,7 +12,7 @@ int main(int argc, char** argv)
 		getline(cin, b);
 		while (true)
 		{
-			//§äend
+			//Â§Ã¤end
 			for (int i = start; i < b.length(); i++)
 				if (b[i] == ' '&&i!=0 || i == b.length() - 1)
 				{
@@ -36,6 +37,5 @@ int main(int argc, char** argv)
 			start = end + 1;
 		}
 	}
-	system("PAUSE");
 	return 0;
 }
