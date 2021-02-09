@@ -1,22 +1,24 @@
 #include <iostream>
-#include<string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	//¦n¦n¹ï·Ó10¶i¦ì»P2¶i¦ì§ä³W«ß
-	int in;
-	cin >> in;
-	int a = in / 2;
-	int b = in % 2;
-	for (int i = 0; i < a; i++)
-	{
-		cout << "1";
-
-	}
-	if (b == 0)
-		cout << "0" << endl;
-	else
-		cout << "1" << endl;
-	system("PAUSE");
-	return 0;
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int array[100], n;
+    while (cin >> n)
+    {
+        int m = 0;
+        while (n > 0)
+        {
+            array[m] = n % 2;
+            m++;
+            n /= 2;
+        }
+        for (int i = m - 1; i >= 0; i--)
+        {
+            cout << array[i];
+        }
+        cout << endl;
+    }
+    return 0;
 }
