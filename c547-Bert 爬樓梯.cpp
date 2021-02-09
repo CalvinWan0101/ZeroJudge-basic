@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
-	int array[10001];
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+   int array[10001];
 	array[0] = 1;
 	array[1] = 1;
 	for (int i = 2; i < 10000; i++)
