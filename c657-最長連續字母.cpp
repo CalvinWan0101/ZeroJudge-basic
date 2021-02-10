@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
 	string a;
 	int start, end;
@@ -30,6 +30,5 @@ int main(int argc, char** argv)
 		}
 		cout << b << " " << max << endl;
 	}
-	system("PAUSE");
 	return 0;
 }
