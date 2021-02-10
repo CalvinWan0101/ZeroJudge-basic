@@ -1,34 +1,38 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
-	string a;
-	int start, end;
-	char b;
-	int max;
-	while (cin >> a)
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	string input;
+	while (cin >> input)
 	{
-		max = 0;
-		start = 0;
-		end = 0;
-		while (true)
+		char a = input[0], maxchar;
+		int num = 0, maxnum = -100;
+		//check eachone
+		for (int i = 0; i < input.length(); i++)
 		{
-			for (int i = start; i < a.length(); i++)
-				if (a[i] != a[start] || i == a.length() - 1)
-				{
-					end = i;
-					break;
-				}
-			if (end - start > max)
+			if (a == input[i])
 			{
-				max = end - start;
-				b = a[start];
+				num++;
+				if (num > maxnum && i == (input.length() - 10))
+				{
+					maxnum = num;
+					num = 1;
+					maxchar = a;
+					a = input[i];
+				}
 			}
-			if (end == a.length() - 1)
-				break;
-			start = end;
+			//when (a != input[i] && num > maxnum) upload the maxnum and maxchar
+			else if (num > maxnum)
+			{
+				maxnum = num;
+				num = 1;
+				maxchar = a;
+				a = input[i];
+			}
 		}
-		cout << b << " " << max << endl;
+		cout << maxchar << " " << maxnum << endl;
 	}
-	return 0;
 }
