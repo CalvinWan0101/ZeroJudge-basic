@@ -1,13 +1,15 @@
 #include <iostream>
+#include <string>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int n;
-	while (cin >> n)
-		if (n % 2 == 0)
-			cout << "Even" << endl;
-		else
-			cout << "Odd" << endl;
-	system("PAUSE");
-	return 0;
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int n;
+    while (cin >> n)
+        if (n % 2 == 0)
+            cout << "Even" << endl;
+        else
+            cout << "Odd" << endl;
+    return 0;
 }
