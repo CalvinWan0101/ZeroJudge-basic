@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
-int main(int argc, char** argv)
+int main()
 {
-	int bucket[4] = { 0 };
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int bucket[4] = { 0 };
 	int n, a;
 	cin >> a;
 	while (cin >> n)
@@ -12,6 +14,4 @@ int main(int argc, char** argv)
 		for (int j = 1; j <= bucket[i]; j++)
 			cout << i << " ";
 	}
-	system("PAUSE");
-	return 0;
 }
