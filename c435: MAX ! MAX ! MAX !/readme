@@ -1,5 +1,5 @@
 題目鏈接 ▶ https://zerojudge.tw/ShowProblem?problemid=c435
-參考思路 ▶  https://zerojudge.tw/ShowThread?postid=15240&reply=0
+參考思路 ▶ https://zerojudge.tw/ShowThread?postid=15240&reply=0
 他是先每次輸入都抓一個max出來
 然後比對max-當前輸入的數字去更新答案
 輸入完就可以把答案輸出
